@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderView" customModule="TrustedForm_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="xJZ-hN-H9a"/>
+                <outlet property="pageControl" destination="abm-xs-IiH" id="6xi-qQ-WYe"/>
+                <outlet property="scrollView" destination="m13-Ph-Kfc" id="fwM-cf-gyM"/>
+                <outlet property="slidesStackView" destination="UqS-lU-aLh" id="efY-ya-VIF"/>
+                <outlet property="textLabel" destination="iB4-o2-8yY" id="EuL-TX-4OA"/>
+                <outlet property="titleLabel" destination="FdK-to-lAo" id="lHT-K8-Svg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="m13-Ph-Kfc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="412"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="infinite" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UqS-lU-aLh">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="412"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UqS-lU-aLh" firstAttribute="bottom" secondItem="V6v-hv-Log" secondAttribute="bottom" id="C5H-Bf-6p0"/>
+                        <constraint firstItem="UqS-lU-aLh" firstAttribute="top" secondItem="V6v-hv-Log" secondAttribute="top" id="WCP-Iw-f13"/>
+                        <constraint firstItem="UqS-lU-aLh" firstAttribute="width" relation="greaterThanOrEqual" secondItem="xKj-eL-tX8" secondAttribute="width" id="ftH-Y7-Uwc"/>
+                        <constraint firstItem="UqS-lU-aLh" firstAttribute="height" secondItem="m13-Ph-Kfc" secondAttribute="height" id="gKl-Og-u1z"/>
+                        <constraint firstItem="UqS-lU-aLh" firstAttribute="leading" secondItem="V6v-hv-Log" secondAttribute="leading" id="vpK-Wa-2Ye"/>
+                        <constraint firstItem="V6v-hv-Log" firstAttribute="trailing" secondItem="UqS-lU-aLh" secondAttribute="trailing" id="w0Y-U1-2qB"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="V6v-hv-Log"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="xKj-eL-tX8"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="abm-xs-IiH">
+                    <rect key="frame" x="146" y="442" width="122.5" height="27.5"/>
+                    <color key="pageIndicatorTintColor" name="textSoft"/>
+                    <color key="currentPageIndicatorTintColor" name="brandNavbar"/>
+                </pageControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdK-to-lAo">
+                    <rect key="frame" x="20" y="499.5" width="374" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" name="brandNavbar"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB4-o2-8yY">
+                    <rect key="frame" x="20" y="540.5" width="374" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="brandNavbar"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="abm-xs-IiH" firstAttribute="top" secondItem="m13-Ph-Kfc" secondAttribute="bottom" constant="30" id="8A9-nG-GbH"/>
+                <constraint firstItem="m13-Ph-Kfc" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.46" priority="750" id="ABd-F5-Znd"/>
+                <constraint firstItem="iB4-o2-8yY" firstAttribute="top" secondItem="FdK-to-lAo" secondAttribute="bottom" constant="12" id="Arl-PE-Re3"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iB4-o2-8yY" secondAttribute="bottom" constant="20" id="SKJ-1M-dHn"/>
+                <constraint firstAttribute="trailing" secondItem="m13-Ph-Kfc" secondAttribute="trailing" id="aS1-0W-OoT"/>
+                <constraint firstItem="abm-xs-IiH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bls-9Z-GVt"/>
+                <constraint firstItem="m13-Ph-Kfc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cUF-bk-VaQ"/>
+                <constraint firstItem="iB4-o2-8yY" firstAttribute="leading" secondItem="FdK-to-lAo" secondAttribute="leading" id="ccG-fN-SRL"/>
+                <constraint firstItem="iB4-o2-8yY" firstAttribute="trailing" secondItem="FdK-to-lAo" secondAttribute="trailing" id="dNM-qT-QnY"/>
+                <constraint firstItem="FdK-to-lAo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="dvS-Jz-5ZG"/>
+                <constraint firstItem="m13-Ph-Kfc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f3k-zA-e3J"/>
+                <constraint firstAttribute="trailing" secondItem="FdK-to-lAo" secondAttribute="trailing" constant="20" id="mSO-pP-rFo"/>
+                <constraint firstItem="FdK-to-lAo" firstAttribute="top" secondItem="abm-xs-IiH" secondAttribute="bottom" constant="30" id="mwA-Hb-yR9"/>
+                <constraint firstItem="m13-Ph-Kfc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ttg-pm-1ya"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="113.83928571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="brandNavbar">
+            <color red="0.14900000393390656" green="0.20800000429153442" blue="0.28200000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textSoft">
+            <color red="0.40392156862745099" green="0.46274509803921571" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

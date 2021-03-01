@@ -1,0 +1,71 @@
+"BOTTOM_MENU_HOME" = "Home";
+"BOTTOM_MENU_TRY_DEMO" = "Try Demo";
+"BOTTOM_MENU_CONTACT_US" = "Contact Us";
+
+"HOME_NAV_TITLE" = "TrustedForm Demo App";
+"HOME_TILE_TITLE" = "Want to see how TrustedForm works on a mobile app?";
+"HOME_TILE_TEXT" = "Tap here to fill out a sample form and see a sample TrustedForm certificate.";
+"HOME_TILE_TRY_DEMO" = "Try The Demo";
+"HOME_LEARN_MORE_HEADER" = "Learn More";
+"HOME_LEARN_MORE_TITLE" = "Learn more about TrustedForm for mobile apps.";
+"HOME_LEARN_MORE_SUBTITLE" = "Explore FAQs, technical documentation, and more.";
+
+"TRY_OUR_DEMO_NAV_TITLE" = "Demo Form";
+"TRY_OUR_DEMO_TITLE" = "Demo Form";
+"TRY_OUR_DEMO_TEXT" = "Fill out the form below and we’ll email you the TrustedForm certificate associated with your sign up.";
+"TRY_OUR_DEMO_FULL_NAME" = "Full Name:";
+"TRY_OUR_DEMO_EMAIL" = "Email:";
+"TRY_OUR_DEMO_PHONE_NUMBER" = "Phone Number:";
+"TRY_OUR_DEMO_SUBMIT" = "Submit";
+"TRY_OUR_DEMO_CONSENT" = "I understand that the TrustedForm certificate is sent to the email address I provided above and I will receive product updates as they are released. I can unsubscribe from product updates at any time.";
+
+"TRY_OUR_DEMO_SUCCESS_NAV_TITLE" = "Demo Form Completed";
+"TRY_OUR_DEMO_SUCCESS_TITLE" = "Thanks for trying the TrustedForm demo!";
+"TRY_OUR_DEMO_SUCCESS_TEXT" = "You will receive an email from support@activeprospect.com shortly (if you don’t see it, check your spam folder). Click the link in the email to view the TrustedForm certificate.";
+
+"CONTACT_US_NAV_TITLE" = "Contact Us";
+"CONTACT_US_TITLE" = "Get in touch.";
+"CONTACT_US_TEXT" = "Questions? We are here to help! Send us a message and we'll respond as soon as we can, or give us a call at 512-394-4546.";
+"CONTACT_US_FIRST_NAME" = "First Name:";
+"CONTACT_US_LAST_NAME" = "Last Name:";
+"CONTACT_US_EMAIL" = "Work Email:";
+"CONTACT_US_PHONE_NUMBER" = "Phone Number:";
+"CONTACT_US_MESSAGE" = "Message:";
+"CONTACT_US_SUBMIT" = "Send Message";
+
+"SIGN_IN_NAV_TITLE" = "Sign in";
+"SIGN_IN_TITLE" = "Welcome.";
+"SIGN_IN_TEXT" = "Si sine metu degendae praesidia firmissima filium morte multavit si sine causa, nollem. At magnum periculum adiit in quo enim ad modum, quaeso, interpretaris? sicine eos. Probabo, inquit, sic agam, ut summo bono, dolorem ipsum, quia non quo quaerimus.";
+"SIGN_IN_EMAIL" = "Email:";
+"SIGN_IN_PASSWORD" = "Password:";
+"SIGN_IN_FORGOT_PASSWORD" = "Forgot password?";
+"SIGN_IN_BUTTON" = "Sign In";
+"SIGN_IN_REGISTER_LABEL" = "Don't have an account?";
+"SIGN_IN_REGISTER_BUTTON" = "Sign Up";
+"SIGN_IN_SKIP" = "Skip";
+
+"SIGN_UP_NAV_TITLE" = "Sign Up";
+"SIGN_UP_TITLE" = "Create an account.";
+"SIGN_UP_TEXT" = "Probabo, inquit, modo ista sis aequitate, quam nihil oportere exquisitis rationibus confirmare, tantum. Sed ut ad respondendum reddidisti quorum facta quem modo ista sis aequitate, quam.";
+"SIGN_UP_EMAIL" = "Email:";
+"SIGN_UP_PASSWORD" = "Password:";
+"SIGN_UP_BUTTON" = "Sign Up";
+"SIGN_UP_LOGIN_LABEL" = "Already have an account?";
+"SIGN_UP_LOGIN_BUTTON" = "Sign In";
+"SIGN_UP_SKIP" = "Skip";
+
+"WHO_IS_AP_NAV_TITLE" = "Who is ActiveProspect?";
+"WHO_IS_AP_TITLE" = "Who is ActiveProspect?";
+"WHO_IS_AP_TEXT" = "We provide companies with complete legal, financial and brand TCPA protection. We make consent-based marketing the best channel to acquire customers who want to be contacted by you.";
+"WHO_IS_AP_SKIP" = "Skip";
+"WHO_IS_AP_CONTINUE_BUTTON" = "Continue";
+
+"EXPLAINER_NAV_TITLE" = "TrustedForm Demo App";
+"EXPLAINER_CONTINUE_BUTTON" = "Continue";
+"EXPLAINER_SKIP" = "Skip";
+"EXPLAINER_1_TITLE" = "Third party documentation you can trust.  ";
+"EXPLAINER_1_TEXT" = "TrustedForm independently collects information about who filled out a form, when, and where. We don’t rely on vendor-supplied data.";
+"EXPLAINER_2_TITLE" = "The highest standard of proof available.";
+"EXPLAINER_2_TEXT" = "TrustedForm provides proof that prior express written consent was obtained before you contact a lead.";
+"EXPLAINER_3_TITLE" = "TCPA compliant protection.";
+"EXPLAINER_3_TEXT" = "TrustedForm certificates are tamper-proof. In the event of a TCPA complaint, you can easily view and share a certificate with your legal team.";

@@ -1,0 +1,10 @@
+source 'https://cdn.cocoapods.org/'
+source 'https://github.com/activeprospect/trustedform-ios-specs.git'
+
+platform :ios, '11.0'
+use_frameworks!
+
+target 'TrustedForm_Demo' do
+  pod 'TrustedForm'
+  pod 'IQKeyboardManagerSwift'
+end

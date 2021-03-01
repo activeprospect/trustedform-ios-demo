@@ -1,0 +1,20 @@
+excluded:
+  - Pods
+line_length: 160
+function_body_length: 50
+shorthand_operator: warning
+force_cast: warning
+force_try: warning
+identifier_name:
+  excluded:
+    - id
+    - i
+    - x
+    - y
+    - z
+    - dx
+    - dy
+    - url
+  min_length:
+    error: 1
+    warning: 3
