@@ -37,7 +37,9 @@ final class HomeViewController: UIViewController {
     }
 
     @objc private func learnMoreTapped() {
-
+        if let url = URL(string: "http://activeprospect.com") {
+            UIApplication.shared.open(url)
+        }
     }
 
     @objc private func tryDemoTapped() {

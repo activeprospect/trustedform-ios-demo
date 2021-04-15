@@ -1,3 +1,11 @@
+//
+//  CALayer+applyShadow.swift
+//  TrustedForm_Demo
+//
+//  Created by Konrad Siemczyk on 03/12/2020.
+//  Copyright © 2020 Devscale. All rights reserved.
+//
+
 import UIKit
 
 extension CALayer {

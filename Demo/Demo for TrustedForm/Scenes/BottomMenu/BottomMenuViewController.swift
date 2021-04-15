@@ -1,3 +1,11 @@
+//
+//  BottomMenuViewController.swift
+//  TrustedForm_Demo
+//
+//  Created by Konrad Siemczyk on 29/12/2020.
+//  Copyright © 2020 Devscale. All rights reserved.
+//
+
 import UIKit
 
 enum TabType {

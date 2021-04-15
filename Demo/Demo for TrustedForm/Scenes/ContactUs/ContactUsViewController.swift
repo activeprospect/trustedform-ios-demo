@@ -1,4 +1,5 @@
 import UIKit
+import MessageUI
 
 final class ContactUsViewController: UIViewController, FormInputsHighlightable {
     @IBOutlet private var titleLabel: UILabel!
@@ -42,7 +43,25 @@ final class ContactUsViewController: UIViewController, FormInputsHighlightable {
     }
 
     @IBAction private func sendMessage(_ sender: UIButton) {
-        // TODO
+        guard MFMailComposeViewController.canSendMail() else {
+            return
+        }
+         
+        let mail = MFMailComposeViewController()
+        mail.mailComposeDelegate = self
+        mail.setSubject("CONTACT_US_SUBJECT".localized)
+        mail.setToRecipients(["CONTACT_US_RECIPIENT".localized])
+        
+        let body = String(
+            format: "CONTACT_US_TEMPLATE".localized,
+            firstNameTextField.text ?? "",
+            lastNameTextField.text ?? "",
+            emailTextField.text ?? "",
+            phoneNumberTextField.text ?? "",
+            messageTextView.text ?? "")
+        mail.setMessageBody(body, isHTML: false)
+        
+        present(mail, animated: true)
     }
 }
 
@@ -53,5 +72,11 @@ extension ContactUsViewController: UITextViewDelegate {
 
     func textViewDidEndEditing(_ textView: UITextView) {
         textView.cancelHighlight()
+    }
+}
+
+extension ContactUsViewController: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
     }
 }
