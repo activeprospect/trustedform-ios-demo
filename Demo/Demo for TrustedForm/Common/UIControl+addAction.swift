@@ -1,3 +1,11 @@
+//
+//  UIControl+addAction.swift
+//  TrustedForm_Demo
+//
+//  Created by Konrad Siemczyk on 04/01/2021.
+//  Copyright © 2021 Devscale. All rights reserved.
+//
+
 import UIKit
 
 typealias Closure = () -> Void

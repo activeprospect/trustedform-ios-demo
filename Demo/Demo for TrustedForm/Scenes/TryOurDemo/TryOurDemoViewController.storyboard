@@ -49,6 +49,7 @@
                                                                         <rect key="frame" x="0.0" y="28.5" width="374" height="48"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="textEditDemoFormFullName"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="48" id="37b-rM-g2q"/>
                                                                         </constraints>
@@ -81,6 +82,7 @@
                                                                         <rect key="frame" x="0.0" y="28.5" width="374" height="48"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="textEditDemoFormEmail"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="48" id="E2w-j1-h7c"/>
                                                                         </constraints>

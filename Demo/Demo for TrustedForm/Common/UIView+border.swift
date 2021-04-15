@@ -2,7 +2,7 @@ import UIKit
 
 extension UIView {
     func highlightBorder() {
-        layer.borderColor = UIColor.blue.cgColor
+        layer.borderColor = #colorLiteral(red: 0.1333333333, green: 0.6549019608, blue: 0.9411764706, alpha: 1)
         layer.borderWidth = 1.5
     }
 

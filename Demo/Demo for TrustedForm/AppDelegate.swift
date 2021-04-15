@@ -12,7 +12,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         ViewControllerManager().setInitialViewController(window: window)
 
-        TrustedForm.default.configure(appId: "243c06e3-03a1-4d3f-a5c0-33715a428b85")
+        TrustedForm.default.configure(
+            appId: "com.activeprospect.trustedform.demo.dev",
+            accessToken: "e21e11c1743fb512d85b600887d2162bee3ced7b")
         
         return true
     }

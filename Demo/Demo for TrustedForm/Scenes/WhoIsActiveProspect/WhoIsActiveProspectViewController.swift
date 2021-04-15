@@ -1,3 +1,11 @@
+//
+//  WhoIsActiveProspectViewController.swift
+//  TrustedForm
+//
+//  Created by Konrad Siemczyk on 11/11/2020.
+//  Copyright (c) 2020 Konrad Siemczyk. All rights reserved.
+//
+
 import UIKit
 
 final class WhoIsActiveProspectViewController: UIViewController {

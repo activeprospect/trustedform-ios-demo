@@ -1,3 +1,4 @@
+//
 import UIKit
 
 extension UILabel {
@@ -12,20 +13,41 @@ extension UITextView {
     }
 }
 
-private func attributedString(_ text: String, lineHeight: CGFloat, textAlignment: NSTextAlignment, font: UIFont?, textColor: UIColor?) -> NSAttributedString {
+private func attributedString(_ text: String, lineHeight: CGFloat, textAlignment: NSTextAlignment, font: UIFont? = nil, textColor: UIColor? = nil) -> NSAttributedString {
+    var attributes: [NSAttributedString.Key: Any] = [:]
+    
     let paragraphStyle = NSMutableParagraphStyle()
     paragraphStyle.alignment = textAlignment
-
-    let attributedString = NSMutableAttributedString(string: text)
-    let range = NSRange(location: 0, length: text.count)
     if let font = font {
         paragraphStyle.lineSpacing = lineHeight - font.lineHeight
-        attributedString.addAttribute(NSAttributedString.Key.font, value: font, range: range)
     }
+    attributes[.paragraphStyle] = paragraphStyle
+    
     if let textColor = textColor {
-        attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: textColor, range: range)
+        attributes[.foregroundColor] = textColor
     }
-    attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: range)
+    
+    return boldedAttributedText(text, font: font, attributes: attributes)
+}
+
+private func boldedAttributedText(_ text: String, font: UIFont?, attributes: [NSAttributedString.Key: Any]?) -> NSAttributedString {
+    let boldRegex = try? NSRegularExpression(pattern: "\\*.+\\*", options: [])
+    let boldRange = boldRegex?.firstMatch(in: text, options: [], range: NSRange(location: 0, length: text.count))?.range
+    
+    let attributedString = NSMutableAttributedString(string: text.replacingOccurrences(of: "*", with: ""), attributes: attributes)
+    if let font = font,
+       let boldRange = boldRange,
+       let boldFontDescription = font.fontDescriptor.withSymbolicTraits(.traitBold) {
+        let boldFont = UIFont(descriptor: boldFontDescription, size: font.pointSize)
+        attributedString.addAttribute(
+            .font,
+            value: boldFont,
+            range: NSRange(location: boldRange.location, length: boldRange.length - 2))
+        attributedString.addAttribute(
+            .font,
+            value: font,
+            range: NSRange(location: boldRange.location + boldRange.length - 2, length: text.count - boldRange.location - boldRange.length))
+    }
 
     return attributedString
 }

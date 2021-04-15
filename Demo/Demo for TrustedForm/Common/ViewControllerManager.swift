@@ -1,3 +1,11 @@
+//
+//  ViewControllerManager.swift
+//  TrustedForm_Demo
+//
+//  Created by Konrad Siemczyk on 15/11/2020.
+//  Copyright © 2020 Devscale. All rights reserved.
+//
+
 import UIKit
 
 final class ViewControllerManager {
