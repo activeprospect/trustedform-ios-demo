@@ -538,7 +538,7 @@
 			baseConfigurationReference = 9E47372958E0A4F7FE02EC52 /* Pods-TrustedForm_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = KKG46J7UE8;
 				INFOPLIST_FILE = "Demo for TrustedForm/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -546,7 +546,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				MODULE_NAME = TrustedForm_Demo;
 				PRODUCT_BUNDLE_IDENTIFIER = com.activeprospect.trustedform.demo.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,7 +560,7 @@
 			baseConfigurationReference = 43A20FF10CC0A908FE5DB29C /* Pods-TrustedForm_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = KKG46J7UE8;
 				INFOPLIST_FILE = "Demo for TrustedForm/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -568,7 +568,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				MODULE_NAME = TrustedForm_Demo;
 				PRODUCT_BUNDLE_IDENTIFIER = com.activeprospect.trustedform.demo.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";

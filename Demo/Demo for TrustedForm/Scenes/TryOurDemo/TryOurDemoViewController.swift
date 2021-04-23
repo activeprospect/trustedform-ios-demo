@@ -42,20 +42,40 @@ final class TryOurDemoViewController: UIViewController, FormInputsHighlightable 
             case let .success(certificate):
                 self?.certificate = certificate
                 self?.trustedFormWidget.initialize(with: certificate)
-                UIView.animate(withDuration: 0.3, animations: {
-                    self?.loadingView.alpha = 0
-                }) { _ in
-                    self?.loadingView.isHidden = true
-                }
+                self?.hideLoadingView()
                 
                 TrustedForm.default.startTracking(for: certificate)
             case .failure(_):
-                break
+                self?.hideLoadingView()
+                
+                self?.emailTextField.isEnabled = false
+                self?.fullNameTextField.isEnabled = false
+                self?.phoneNumberTextField.isEnabled = false
+                
+                self?.displayCertificateError()
             }
         }
         
         trustedFormWidget.delegate = self
         trustedFormWidget.isSubmitEnabled = false
+    }
+    
+    private func hideLoadingView() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.loadingView.alpha = 0
+        }) { _ in
+            self.loadingView.isHidden = true
+        }
+    }
+    
+    private func displayCertificateError() {
+        let alert = UIAlertController(
+            title: nil,
+            message: "TRY_OUR_DEMO_CERT_ERROR".localized,
+            preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        self.present(alert, animated: true)
     }
     
     @objc
@@ -101,11 +121,7 @@ extension TryOurDemoViewController: TrustedFormViewDelegate {
     }
     
     private func handleSubmitResponse(error: Error?) {
-        UIView.animate(withDuration: 0.3, animations: {
-            self.loadingView.alpha = 0
-        }) { _ in
-            self.loadingView.isHidden = true
-        }
+        self.hideLoadingView()
         
         guard error == nil else {
             let alert = UIAlertController(

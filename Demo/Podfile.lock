@@ -1,25 +1,33 @@
 PODS:
   - Alamofire (5.4.1)
   - IQKeyboardManagerSwift (6.5.6)
-  - TrustedForm (0.2.0):
+  - TrustedForm (0.2.1):
     - Alamofire (~> 5.4)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
-  - TrustedForm
+  - TrustedForm (from `https://github.com/activeprospect/trustedform-ios-sdk.git`, branch `0.2.1dev`)
 
 SPEC REPOS:
-  https://github.com/activeprospect/trustedform-ios-specs.git:
-    - TrustedForm
   trunk:
     - Alamofire
     - IQKeyboardManagerSwift
 
+EXTERNAL SOURCES:
+  TrustedForm:
+    :branch: 0.2.1dev
+    :git: https://github.com/activeprospect/trustedform-ios-sdk.git
+
+CHECKOUT OPTIONS:
+  TrustedForm:
+    :commit: 555dd402d970a9655f3d94f77b551fb751bee061
+    :git: https://github.com/activeprospect/trustedform-ios-sdk.git
+
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
-  TrustedForm: e95399d95760006b40a0d60ecad04ca32ddf1a43
+  TrustedForm: 63566392999677b403dcec7c66bec353fbac7b4d
 
-PODFILE CHECKSUM: 9aff7592b8b2a2883d50a049b3a6a0e03639f7ac
+PODFILE CHECKSUM: 1cbd4508c0c8f541467519cc010311c69ca217de
 
 COCOAPODS: 1.10.0

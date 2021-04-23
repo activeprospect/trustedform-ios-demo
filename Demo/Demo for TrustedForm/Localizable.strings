@@ -19,6 +19,7 @@
 "TRY_OUR_DEMO_SUBMIT" = "Submit";
 "TRY_OUR_DEMO_CONSENT" = "I understand that the TrustedForm certificate is sent to the email address I provided above and I will receive product updates as they are released. I can unsubscribe from product updates at any time.";
 "TRY_OUR_DEMO_SUBMIT_ERROR" = "Sorry, that didn't work! Please check your internet connection, and then try again.";
+"TRY_OUR_DEMO_CERT_ERROR" = "Sorry, something went wrong! Please check your internet connection and try opening the form again.";
 
 "TRY_OUR_DEMO_SUCCESS_NAV_TITLE" = "Demo Form Completed";
 "TRY_OUR_DEMO_SUCCESS_TITLE" = "Thanks for trying the TrustedForm demo!";
