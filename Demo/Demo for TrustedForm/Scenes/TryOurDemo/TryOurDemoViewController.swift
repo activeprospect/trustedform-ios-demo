@@ -1,5 +1,5 @@
 import UIKit
-import TrustedForm
+import TrustedFormSwift
 
 final class TryOurDemoViewController: UIViewController, FormInputsHighlightable {
     
