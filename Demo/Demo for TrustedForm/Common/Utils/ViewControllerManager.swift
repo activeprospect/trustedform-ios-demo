@@ -1,18 +1,14 @@
-//
-//  ViewControllerManager.swift
-//  TrustedForm_Demo
-//
-//  Created by Konrad Siemczyk on 15/11/2020.
-//  Copyright © 2020 Devscale. All rights reserved.
-//
-
 import UIKit
 
 final class ViewControllerManager {
     func setInitialViewController(window: UIWindow? = nil) {
-        let viewController: WhoIsActiveProspectViewController = UIStoryboard.instantiateInitialViewController()
-        let navigationController = TrustedFormNavigationController(rootViewController: viewController)
-        setInitial(viewController: navigationController, window: window)
+        let activeProspectViewController: WhoIsActiveProspectViewController = UIStoryboard.instantiateInitialViewController()
+        
+        let rootViewController = UserDefaults.hasSeenIntro
+            ? BottomMenuViewController()
+            : TrustedFormNavigationController(rootViewController: activeProspectViewController)
+        
+        setInitial(viewController: rootViewController, window: window)
     }
 
     func setInitial(viewController: UIViewController, window: UIWindow? = nil) {

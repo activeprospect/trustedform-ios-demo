@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,36 +25,57 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="m13-Ph-Kfc">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="412"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="infinite" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UqS-lU-aLh">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="412"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFD-l1-TWI" userLabel="ImageUpperSpacer">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="107.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="infinite" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="UqS-lU-aLh" userLabel="ImageStackView">
+                            <rect key="frame" x="0.0" y="107.5" width="414" height="376.5"/>
                         </stackView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="UqS-lU-aLh" firstAttribute="bottom" secondItem="V6v-hv-Log" secondAttribute="bottom" id="C5H-Bf-6p0"/>
-                        <constraint firstItem="UqS-lU-aLh" firstAttribute="top" secondItem="V6v-hv-Log" secondAttribute="top" id="WCP-Iw-f13"/>
+                        <constraint firstItem="lFD-l1-TWI" firstAttribute="leading" secondItem="xKj-eL-tX8" secondAttribute="leading" id="6Do-N6-qwf"/>
+                        <constraint firstItem="lFD-l1-TWI" firstAttribute="top" secondItem="V6v-hv-Log" secondAttribute="top" id="U1s-aW-8en"/>
+                        <constraint firstItem="UqS-lU-aLh" firstAttribute="top" secondItem="lFD-l1-TWI" secondAttribute="bottom" id="WCP-Iw-f13"/>
+                        <constraint firstItem="lFD-l1-TWI" firstAttribute="trailing" secondItem="xKj-eL-tX8" secondAttribute="trailing" id="ciO-2A-f7f"/>
                         <constraint firstItem="UqS-lU-aLh" firstAttribute="width" relation="greaterThanOrEqual" secondItem="xKj-eL-tX8" secondAttribute="width" id="ftH-Y7-Uwc"/>
-                        <constraint firstItem="UqS-lU-aLh" firstAttribute="height" secondItem="m13-Ph-Kfc" secondAttribute="height" id="gKl-Og-u1z"/>
+                        <constraint firstItem="UqS-lU-aLh" firstAttribute="height" secondItem="m13-Ph-Kfc" secondAttribute="height" multiplier="0.42" id="gKl-Og-u1z"/>
                         <constraint firstItem="UqS-lU-aLh" firstAttribute="leading" secondItem="V6v-hv-Log" secondAttribute="leading" id="vpK-Wa-2Ye"/>
                         <constraint firstItem="V6v-hv-Log" firstAttribute="trailing" secondItem="UqS-lU-aLh" secondAttribute="trailing" id="w0Y-U1-2qB"/>
+                        <constraint firstItem="V6v-hv-Log" firstAttribute="bottom" secondItem="UqS-lU-aLh" secondAttribute="bottom" id="yPT-8Y-Po8"/>
                     </constraints>
                     <viewLayoutGuide key="contentLayoutGuide" id="V6v-hv-Log"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="xKj-eL-tX8"/>
                 </scrollView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="abm-xs-IiH">
-                    <rect key="frame" x="146" y="442" width="122.5" height="27.5"/>
-                    <color key="pageIndicatorTintColor" name="textSoft"/>
-                    <color key="currentPageIndicatorTintColor" name="brandNavbar"/>
+                    <rect key="frame" x="146.5" y="520" width="121.5" height="27.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27.5" id="Gol-0G-cD7"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </pageControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xg-xj-D6G" userLabel="CenterLine">
+                    <rect key="frame" x="0.0" y="447.5" width="414" height="1"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="VNK-bB-C9h"/>
+                    </constraints>
+                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdK-to-lAo">
-                    <rect key="frame" x="20" y="499.5" width="374" height="29"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <rect key="frame" x="20" y="577.5" width="374" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                     <color key="textColor" name="brandNavbar"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB4-o2-8yY">
-                    <rect key="frame" x="20" y="540.5" width="374" height="17"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVg-uv-EMa" userLabel="UpperPageControlSpacer">
+                    <rect key="frame" x="0.0" y="448.5" width="414" height="71.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB4-o2-8yY" userLabel="Subtitle">
+                    <rect key="frame" x="20" y="618.5" width="374" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" name="brandNavbar"/>
                     <nil key="highlightedColor"/>
@@ -61,9 +83,12 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="abm-xs-IiH" firstAttribute="top" secondItem="m13-Ph-Kfc" secondAttribute="bottom" constant="30" id="8A9-nG-GbH"/>
-                <constraint firstItem="m13-Ph-Kfc" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.46" priority="750" id="ABd-F5-Znd"/>
+                <constraint firstItem="uVg-uv-EMa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7d7-7j-XF0"/>
+                <constraint firstItem="m13-Ph-Kfc" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" priority="750" id="ABd-F5-Znd"/>
                 <constraint firstItem="iB4-o2-8yY" firstAttribute="top" secondItem="FdK-to-lAo" secondAttribute="bottom" constant="12" id="Arl-PE-Re3"/>
+                <constraint firstItem="lFD-l1-TWI" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.12" id="CKS-Gm-Y5w"/>
+                <constraint firstAttribute="trailing" secondItem="uVg-uv-EMa" secondAttribute="trailing" id="G6M-4B-jsA"/>
+                <constraint firstItem="uVg-uv-EMa" firstAttribute="top" secondItem="7xg-xj-D6G" secondAttribute="bottom" id="LRZ-2B-2NK"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iB4-o2-8yY" secondAttribute="bottom" constant="20" id="SKJ-1M-dHn"/>
                 <constraint firstAttribute="trailing" secondItem="m13-Ph-Kfc" secondAttribute="trailing" id="aS1-0W-OoT"/>
                 <constraint firstItem="abm-xs-IiH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bls-9Z-GVt"/>
@@ -72,9 +97,14 @@
                 <constraint firstItem="iB4-o2-8yY" firstAttribute="trailing" secondItem="FdK-to-lAo" secondAttribute="trailing" id="dNM-qT-QnY"/>
                 <constraint firstItem="FdK-to-lAo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="dvS-Jz-5ZG"/>
                 <constraint firstItem="m13-Ph-Kfc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f3k-zA-e3J"/>
+                <constraint firstItem="abm-xs-IiH" firstAttribute="top" secondItem="uVg-uv-EMa" secondAttribute="bottom" id="j3O-20-1Zo"/>
+                <constraint firstItem="7xg-xj-D6G" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kfy-jd-9mN"/>
+                <constraint firstItem="uVg-uv-EMa" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.08" id="l61-2Y-lHy"/>
                 <constraint firstAttribute="trailing" secondItem="FdK-to-lAo" secondAttribute="trailing" constant="20" id="mSO-pP-rFo"/>
                 <constraint firstItem="FdK-to-lAo" firstAttribute="top" secondItem="abm-xs-IiH" secondAttribute="bottom" constant="30" id="mwA-Hb-yR9"/>
+                <constraint firstItem="7xg-xj-D6G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="n6e-Kz-z3k"/>
                 <constraint firstItem="m13-Ph-Kfc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ttg-pm-1ya"/>
+                <constraint firstAttribute="trailing" secondItem="7xg-xj-D6G" secondAttribute="trailing" id="zWv-p5-BOZ"/>
             </constraints>
             <point key="canvasLocation" x="140.57971014492756" y="113.83928571428571"/>
         </view>
@@ -83,8 +113,8 @@
         <namedColor name="brandNavbar">
             <color red="0.14900000393390656" green="0.20800000429153442" blue="0.28200000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="textSoft">
-            <color red="0.40392156862745099" green="0.46274509803921571" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
