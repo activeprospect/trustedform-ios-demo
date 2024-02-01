@@ -1,30 +1,49 @@
-# trustedform-ios-demo
-Requirements:
-Xcode, CocoaPods
+# TrustedForm iOS Demo
 
-## 1.Install CocoaPods 
+This repository contains a demo project for integrating and demonstrating the functionality of the TrustedForm SDK on iOS. The TrustedForm SDK allows iOS developers to easily integrate TrustedForm's capabilities into their applications.
 
-sudo gem install -n /usr/local/bin cocoapods -v 1.8.4
-![Snip20210413_32](https://user-images.githubusercontent.com/53106453/114606747-881f4700-9c50-11eb-935c-94cabb333007.png)
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Xcode (latest version recommended)
+- Swift Package Manager (comes with Xcode)
+- An active iOS Developer account for running the demo on a physical device (optional)
+
+## Getting Started
+
+Follow these steps to set up and run the TrustedForm iOS demo project:
+
+### 1. Clone the Repository
+
+Start by cloning the repository to your local machine. You can do this by opening a terminal and running the following command:
+
+```bash
+git clone https://github.com/activeprospect/trustedform-ios-demo.git
+```
 
 
-## 2.After installing CocoaPods, 
-cd to the “Demo” directory
-And run “pod install” from the command prompt 
-Output should be 
-![Snip20210413_33](https://user-images.githubusercontent.com/53106453/114605421-ec410b80-9c4e-11eb-8b45-f3b13b513c83.png)
+### 2. Configure Development Settings
 
-## 3.Open Xcode and at the top left File-> Open-> TrustedForm.xcworkspace
-![Snip20210413_34](https://user-images.githubusercontent.com/53106453/114606766-90778200-9c50-11eb-8ffe-b68437bca8c3.png)
+Navigate to the cloned repository directory and update the `development.xcconfig` file with your correct information. If you do not have personal credentials yet or wish to test the integration first, you can use our provided demo token.
 
-## 4.Select your Simulator device
-![Snip20210413_38](https://user-images.githubusercontent.com/53106453/114606796-9a00ea00-9c50-11eb-9aa5-07255dd8cf5b.png)
+```plaintext
+// Inside development.xcconfig
+DEMO_TOKEN = your_demo_token_here
+```
 
-## 5.Click the play button in the top left toolbar in Xcode
-![Snip20210413_40](https://user-images.githubusercontent.com/53106453/114606865-af761400-9c50-11eb-91cc-605692b1e064.png)
+### 3. Set TrustedForm SDK Version
 
-## 6.If everything is in order you should see the build successfully build
-![Snip20210413_42](https://user-images.githubusercontent.com/53106453/114606901-ba30a900-9c50-11eb-882a-774db2246013.png)
- 
-## 7.Trusted From Demo app for IOS should then launch on the selected platform 
-![Snip20210413_36](https://user-images.githubusercontent.com/53106453/114606991-d6344a80-9c50-11eb-95ac-8505f96ff7c1.png)
+Open your project in Xcode and use the Swift Package Manager to target the correct version of the TrustedForm SDK. As of this writing, the current version is `0.3.1`. To do this:
+
+- Go to `File` > `Swift Packages` > `Add Package Dependency...`
+- Enter the TrustedForm SDK repository URL (https://github.com/activeprospect/trustedform-ios-sdk)
+- Choose version `0.3.1` and add the package to your project
+
+### 4. Build and Run the Project
+
+Finally, build and run the project in Xcode to see the TrustedForm iOS demo in action. You can run the project on a simulator or a physical device (if you have set up a developer account and a device for development).
+
+## Support
+
+For issues, questions, please open an issue or pull request in this repository. For more detailed documentation on the TrustedForm SDK, visit [TrustedForm SDK Documentation](https://github.com/activeprospect/trustedform-ios-sdk).
+
