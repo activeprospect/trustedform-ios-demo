@@ -38,5 +38,14 @@
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+    
+    <key>CONTACT_URL</key>
+    <string>$(CONTACT_URL)</string>
+    <key>CERTIFICATE_URL</key>
+    <string>$(CERTIFICATE_URL)</string>
+    <key>DEMO_URL</key>
+    <string>$(DEMO_URL)</string>
+    <key>TRUSTEDFORM_TOKEN</key>
+    <string>$(TRUSTEDFORM_TOKEN)</string>
 </dict>
 </plist>

@@ -1,11 +1,3 @@
-//
-//  SliderView.swift
-//  TrustedForm_Demo
-//
-//  Created by Konrad Siemczyk on 13/11/2020.
-//  Copyright © 2020 Devscale. All rights reserved.
-//
-
 import UIKit
 
 final class SliderView: UIView {
@@ -54,11 +46,19 @@ final class SliderView: UIView {
     private func setupSlides(slides: [Slide]) {
         for index in 0 ..< slides.count {
             let slide = slides[index]
+            
+            let wrapperView = UIView()
+            wrapperView.translatesAutoresizingMaskIntoConstraints = false
+            slidesStackView.addArrangedSubview(wrapperView)
+            wrapperView.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor).isActive = true
+            
             let imageView = UIImageView(image: slide.icon)
             imageView.contentMode = .scaleAspectFit
             imageView.translatesAutoresizingMaskIntoConstraints = false
-            slidesStackView.addArrangedSubview(imageView)
-            imageView.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor).isActive = true
+            wrapperView.addSubview(imageView)
+            imageView.widthAnchor.constraint(equalTo: wrapperView.widthAnchor, multiplier: 0.7).isActive = true
+            imageView.centerXAnchor.constraint(equalTo: wrapperView.centerXAnchor).isActive = true
+            imageView.centerYAnchor.constraint(equalTo: wrapperView.centerYAnchor).isActive = true
         }
         pageControl.isUserInteractionEnabled = false
         pageControl.currentPage = 0

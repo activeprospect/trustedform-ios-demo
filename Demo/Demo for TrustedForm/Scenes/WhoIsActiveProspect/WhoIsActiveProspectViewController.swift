@@ -1,11 +1,3 @@
-//
-//  WhoIsActiveProspectViewController.swift
-//  TrustedForm
-//
-//  Created by Konrad Siemczyk on 11/11/2020.
-//  Copyright (c) 2020 Konrad Siemczyk. All rights reserved.
-//
-
 import UIKit
 
 final class WhoIsActiveProspectViewController: UIViewController {
@@ -36,11 +28,14 @@ final class WhoIsActiveProspectViewController: UIViewController {
         let viewController = BottomMenuViewController()
         viewController.modalTransitionStyle = .crossDissolve
         viewController.modalPresentationStyle = .fullScreen
-        present(viewController, animated: true)
+        present(viewController, animated: true) {
+            UserDefaults.hasSeenIntro = true
+        }
     }
 
     @IBAction private func `continue`() {
         let viewController: ExplainerViewController = UIStoryboard.instantiateInitialViewController()
         navigationController?.pushViewController(viewController, animated: true)
+        UserDefaults.hasSeenIntro = true
     }
 }

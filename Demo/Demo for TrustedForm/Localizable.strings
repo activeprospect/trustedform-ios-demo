@@ -19,10 +19,12 @@
 "TRY_OUR_DEMO_SUBMIT" = "Submit";
 "TRY_OUR_DEMO_CONSENT" = "I understand that the TrustedForm certificate is sent to the email address I provided above and I will receive product updates as they are released. I can unsubscribe from product updates at any time.";
 "TRY_OUR_DEMO_SUBMIT_ERROR" = "Sorry, that didn't work! Please check your internet connection, and then try again.";
+"TRY_OUR_DEMO_CERT_ERROR" = "Sorry, something went wrong! Please check your internet connection and try opening the form again.";
 
 "TRY_OUR_DEMO_SUCCESS_NAV_TITLE" = "Demo Form Completed";
 "TRY_OUR_DEMO_SUCCESS_TITLE" = "Thanks for trying the TrustedForm demo!";
 "TRY_OUR_DEMO_SUCCESS_TEXT" = "You will receive an email from support@activeprospect.com shortly (if you don’t see it, check your spam folder). Click the link in the email to view the TrustedForm certificate.";
+"TRY_OUR_DEMO_ABOUT_NO_EMAIL_CLIENT_ERROR" = "No email client is installed on your device.";
 
 "CONTACT_US_NAV_TITLE" = "Contact Us";
 "CONTACT_US_TITLE" = "Get in touch.";
@@ -35,6 +37,9 @@
 "CONTACT_US_SUBMIT" = "Send Message";
 "CONTACT_US_SUBJECT" = "Contact request";
 "CONTACT_US_RECIPIENT" = "support@activeprospect.com";
+"CONTACT_US_SUCCESS_ALERT_TITLE" = "Success!";
+"CONTACT_US_SUCCESS_ALERT_MESSAGE" = "Your message has been sent.";
+"CONTACT_US_SUBMIT_ERROR" = "Sorry, that didn't work! Please check your internet connection, and then try again.";
 "CONTACT_US_TEMPLATE" = "
 First Name:
 %@
@@ -67,3 +72,7 @@ Message:
 "EXPLAINER_2_TEXT" = "TrustedForm provides proof that prior express written consent was obtained before you contact a lead.";
 "EXPLAINER_3_TITLE" = "TCPA compliant protection.";
 "EXPLAINER_3_TEXT" = "TrustedForm certificates are tamper-proof. In the event of a TCPA complaint, you can easily view and share a certificate with your legal team.";
+
+"ERROR_TITLE" = "Error occured";
+"NETWORKING_ERROR_DECODING" = "The response cannot be read. Please try again.";
+"NETWORKING_ERROR_UNKNOWN" = "Something has gone wrong. Please try again.";

@@ -1,0 +1,3 @@
+DEMO_URL = app.leadconduit.com
+TRUSTEDFORM_TOKEN = 75d30e131d7cd29ebb4a92f4b564b900b5128153
+CERTIFICATE_URL = cert.trustedform.com

@@ -1,11 +1,3 @@
-//
-//  BottomMenuViewController.swift
-//  TrustedForm_Demo
-//
-//  Created by Konrad Siemczyk on 29/12/2020.
-//  Copyright © 2020 Devscale. All rights reserved.
-//
-
 import UIKit
 
 enum TabType {
@@ -18,16 +10,21 @@ protocol TabBarSwitchable {
 
 final class BottomMenuViewController: UITabBarController {
     private lazy var homeViewController: HomeViewController = UIStoryboard.instantiateInitialViewController()
-    private lazy var tryOurDemoController: TryOurDemoViewController = UIStoryboard.instantiateInitialViewController()
     private lazy var contactUsViewController: ContactUsViewController = UIStoryboard.instantiateInitialViewController()
+    
+    private var tryDemoNavigationController: TrustedFormNavigationController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let homeNavigationController = TrustedFormNavigationController(rootViewController: homeViewController)
         homeNavigationController.tabBarItem = UITabBarItem(title: "BOTTOM_MENU_HOME".localized, image: #imageLiteral(resourceName: "home"), selectedImage: #imageLiteral(resourceName: "home"))
-        let tryDemoNavigationController = TrustedFormNavigationController(rootViewController: tryOurDemoController)
+        
+        let demoViewController: TryOurDemoViewController = UIStoryboard.instantiateInitialViewController()
+        let tryDemoNavigationController = TrustedFormNavigationController(rootViewController: demoViewController)
         tryDemoNavigationController.tabBarItem = UITabBarItem(title: "BOTTOM_MENU_TRY_DEMO".localized, image: #imageLiteral(resourceName: "try-demo"), selectedImage: #imageLiteral(resourceName: "try-demo"))
+        self.tryDemoNavigationController = tryDemoNavigationController
+        
         let contactUsNavigationController = TrustedFormNavigationController(rootViewController: contactUsViewController)
         contactUsNavigationController.tabBarItem = UITabBarItem(title: "BOTTOM_MENU_CONTACT_US".localized, image: #imageLiteral(resourceName: "contact-us"), selectedImage: #imageLiteral(resourceName: "contact-us"))
 
@@ -35,11 +32,18 @@ final class BottomMenuViewController: UITabBarController {
         delegate = self
         tabBar.tintColor = #colorLiteral(red: 0.1817100644, green: 0.8225213885, blue: 0.5138735771, alpha: 1)
     }
+    
+    fileprivate func reloadDemoView() {
+        let demoViewController: TryOurDemoViewController = UIStoryboard.instantiateInitialViewController()
+        self.tryDemoNavigationController?.setViewControllers([demoViewController], animated: false)
+    }
 }
 
 extension BottomMenuViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        (viewController as? UINavigationController)?.popToRootViewController(animated: false)
+        if viewController == self.tryDemoNavigationController {
+            self.reloadDemoView()
+        }
     }
 }
 
@@ -49,6 +53,7 @@ extension BottomMenuViewController: TabBarSwitchable {
         case .home:
             selectedIndex = 0
         case .tryDemo:
+            self.reloadDemoView()
             selectedIndex = 1
         case .contactUs:
             selectedIndex = 2

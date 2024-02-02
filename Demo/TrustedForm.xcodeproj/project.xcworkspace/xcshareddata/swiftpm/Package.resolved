@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "b2fa556e4e48cbf06cf8c63def138c98f4b811fa",
+        "version" : "5.8.0"
+      }
+    },
+    {
+      "identity" : "iqkeyboardmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
+      "state" : {
+        "revision" : "c00b1ae9fa1ad8af4465bb6ca901f6943fc98eba",
+        "version" : "6.5.16"
+      }
+    },
+    {
+      "identity" : "trustedform-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/activeprospect/trustedform-ios-sdk.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "0841fcd1f8cc6cdc8795f59680fb381319745e0f"
+      }
+    }
+  ],
+  "version" : 2
+}

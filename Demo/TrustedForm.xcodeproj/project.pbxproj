@@ -7,9 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0532405E26A83C2B00FD8E2B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0532405D26A83C2B00FD8E2B /* Constants.swift */; };
+		0532406926A843EA00FD8E2B /* AboutDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0532406726A843EA00FD8E2B /* AboutDialogViewController.swift */; };
+		0532406A26A843EA00FD8E2B /* AboutDialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0532406826A843EA00FD8E2B /* AboutDialogViewController.xib */; };
+		059A00012681FEB000DF99EE /* LoadingViewHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A00002681FEB000DF99EE /* LoadingViewHandling.swift */; };
+		059A00032682078700DF99EE /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059A00022682078700DF99EE /* UIViewController+Alerts.swift */; };
+		059AFFF42680C15C00DF99EE /* FormEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059AFFF32680C15C00DF99EE /* FormEndpoint.swift */; };
+		059AFFF72680C21600DF99EE /* DemoRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059AFFF62680C21600DF99EE /* DemoRequestModel.swift */; };
+		059AFFFA268114B800DF99EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059AFFF9268114B800DF99EE /* NetworkingError.swift */; };
+		059AFFFD26811D5400DF99EE /* ContactRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059AFFFC26811D5400DF99EE /* ContactRequestModel.swift */; };
+		05D1CB02266A368300D2A55A /* UserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1CB01266A368300D2A55A /* UserDefaultWrapper.swift */; };
+		05D1CB06266A36FE00D2A55A /* UserDefaults+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1CB05266A36FE00D2A55A /* UserDefaults+Keys.swift */; };
+		05D1CB0A266A44EA00D2A55A /* ControlObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1CB09266A44EA00D2A55A /* ControlObserving.swift */; };
+		05D1CB0E266A4B7300D2A55A /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1CB0D266A4B7300D2A55A /* SubmitButton.swift */; };
+		05D1CB17266BDC7800D2A55A /* DemoResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D1CB16266BDC7800D2A55A /* DemoResponseModel.swift */; };
+		05DC846D2680B9C6002831C0 /* NetworkingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC846C2680B9C6002831C0 /* NetworkingProtocol.swift */; };
+		05DC84712680BA97002831C0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC84702680BA97002831C0 /* Endpoint.swift */; };
+		05DC84742680BC6F002831C0 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC84732680BC6F002831C0 /* NetworkingService.swift */; };
+		55522E4525FF7F6900573FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Assets.xcassets */; };
+		559D298026E1187F00F19007 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559D297F26E1187F00F19007 /* Configuration.swift */; };
+		5631226F27453F0300A114CD /* ContactResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631226E27453F0300A114CD /* ContactResponseModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* WhoIsActiveProspectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* WhoIsActiveProspectViewController.swift */; };
-		607FACDD1AFB9204008FA782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Assets.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		711C2D60257E3CBB00B0EAB9 /* ExplainerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711C2D5F257E3CBB00B0EAB9 /* ExplainerViewController.storyboard */; };
 		711C2D63257E3CC800B0EAB9 /* ExplainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C2D62257E3CC800B0EAB9 /* ExplainerViewController.swift */; };
@@ -35,11 +54,32 @@
 		71F6AD2E25A361A7008259C9 /* FormInputsHighlightable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6AD2D25A361A7008259C9 /* FormInputsHighlightable.swift */; };
 		71F6AD3325A375CA008259C9 /* DemoSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6AD3225A375CA008259C9 /* DemoSuccessViewController.swift */; };
 		71F6AD3725A375D4008259C9 /* DemoSuccessViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F6AD3625A375D4008259C9 /* DemoSuccessViewController.storyboard */; };
-		CC7A7AD1DFDB93644ACF0482 /* Pods_TrustedForm_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB33D0DE23C32D71BAE13FDD /* Pods_TrustedForm_Demo.framework */; };
+		90CFA7A12AD9B578001FC692 /* TrustedFormPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 90CFA7A02AD9B578001FC692 /* TrustedFormPackage */; };
+		F51549622ACCE7D4002CEFF0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43A20FF10CC0A908FE5DB29C /* Pods-TrustedForm_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustedForm_Demo.release.xcconfig"; path = "Target Support Files/Pods-TrustedForm_Demo/Pods-TrustedForm_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		0532405D26A83C2B00FD8E2B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0532406726A843EA00FD8E2B /* AboutDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutDialogViewController.swift; sourceTree = "<group>"; };
+		0532406826A843EA00FD8E2B /* AboutDialogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutDialogViewController.xib; sourceTree = "<group>"; };
+		059A00002681FEB000DF99EE /* LoadingViewHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewHandling.swift; sourceTree = "<group>"; };
+		059A00022682078700DF99EE /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		059AFFF32680C15C00DF99EE /* FormEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormEndpoint.swift; sourceTree = "<group>"; };
+		059AFFF62680C21600DF99EE /* DemoRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoRequestModel.swift; sourceTree = "<group>"; };
+		059AFFF9268114B800DF99EE /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		059AFFFC26811D5400DF99EE /* ContactRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRequestModel.swift; sourceTree = "<group>"; };
+		05D1CB01266A368300D2A55A /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
+		05D1CB05266A36FE00D2A55A /* UserDefaults+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Keys.swift"; sourceTree = "<group>"; };
+		05D1CB09266A44EA00D2A55A /* ControlObserving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlObserving.swift; sourceTree = "<group>"; };
+		05D1CB0D266A4B7300D2A55A /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
+		05D1CB16266BDC7800D2A55A /* DemoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoResponseModel.swift; sourceTree = "<group>"; };
+		05DC846C2680B9C6002831C0 /* NetworkingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProtocol.swift; sourceTree = "<group>"; };
+		05DC84702680BA97002831C0 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		05DC84732680BC6F002831C0 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		559D297D26E114B600F19007 /* Demo-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Demo-Development.xcconfig"; sourceTree = "<group>"; };
+		559D297F26E1187F00F19007 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		559D298226E11A4D00F19007 /* Demo-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Demo-Production.xcconfig"; sourceTree = "<group>"; };
+		5631226E27453F0300A114CD /* ContactResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactResponseModel.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TrustedForm_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrustedForm_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,8 +110,7 @@
 		71F6AD2D25A361A7008259C9 /* FormInputsHighlightable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInputsHighlightable.swift; sourceTree = "<group>"; };
 		71F6AD3225A375CA008259C9 /* DemoSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSuccessViewController.swift; sourceTree = "<group>"; };
 		71F6AD3625A375D4008259C9 /* DemoSuccessViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DemoSuccessViewController.storyboard; sourceTree = "<group>"; };
-		9E47372958E0A4F7FE02EC52 /* Pods-TrustedForm_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustedForm_Demo.debug.xcconfig"; path = "Target Support Files/Pods-TrustedForm_Demo/Pods-TrustedForm_Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		EB33D0DE23C32D71BAE13FDD /* Pods_TrustedForm_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrustedForm_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A55D9E2ACCF7DB000A9D4C /* TrustedForm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TrustedForm.xcframework; path = ../build/TrustedForm.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,29 +118,138 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC7A7AD1DFDB93644ACF0482 /* Pods_TrustedForm_Demo.framework in Frameworks */,
+				F51549622ACCE7D4002CEFF0 /* IQKeyboardManagerSwift in Frameworks */,
+				90CFA7A12AD9B578001FC692 /* TrustedFormPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A1080728250B4326B5B9418 /* Pods */ = {
+		0532405C26A83C1C00FD8E2B /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				9E47372958E0A4F7FE02EC52 /* Pods-TrustedForm_Demo.debug.xcconfig */,
-				43A20FF10CC0A908FE5DB29C /* Pods-TrustedForm_Demo.release.xcconfig */,
+				0532405D26A83C2B00FD8E2B /* Constants.swift */,
+				559D297F26E1187F00F19007 /* Configuration.swift */,
 			);
-			path = Pods;
+			path = Config;
+			sourceTree = "<group>";
+		};
+		054485D9267B742B00581F7B /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0532406726A843EA00FD8E2B /* AboutDialogViewController.swift */,
+				0532406826A843EA00FD8E2B /* AboutDialogViewController.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		059AFFF52680C1A400DF99EE /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				059AFFF32680C15C00DF99EE /* FormEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		059AFFF82681149F00DF99EE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				059AFFF9268114B800DF99EE /* NetworkingError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		059AFFFB26811D4900DF99EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				059AFFFC26811D5400DF99EE /* ContactRequestModel.swift */,
+				5631226E27453F0300A114CD /* ContactResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05D1CB00266A367600D2A55A /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				05D1CB01266A368300D2A55A /* UserDefaultWrapper.swift */,
+			);
+			path = PropertyWrappers;
+			sourceTree = "<group>";
+		};
+		05D1CB0C266A4B1C00D2A55A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				714EC54525791EB10002BB05 /* CALayer+applyShadow.swift */,
+				7196222425A4B83A00BE68C2 /* String+localized.swift */,
+				71F6AD2A25A36172008259C9 /* UIControl+addAction.swift */,
+				7196225325A7366000BE68C2 /* UILabel+textWithLineSpacing.swift */,
+				059A00022682078700DF99EE /* UIViewController+Alerts.swift */,
+				7162909C259CF2B500471B32 /* UIView+border.swift */,
+				05D1CB05266A36FE00D2A55A /* UserDefaults+Keys.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05D1CB15266BDC6000D2A55A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				059AFFF62680C21600DF99EE /* DemoRequestModel.swift */,
+				05D1CB16266BDC7800D2A55A /* DemoResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05DC84692680B955002831C0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				05DC846B2680B96E002831C0 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		05DC846A2680B963002831C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				05D1CB0C266A4B1C00D2A55A /* Extensions */,
+				05D1CB00266A367600D2A55A /* PropertyWrappers */,
+				719D0C22255EA4DB0087CB3F /* Slider */,
+				05D1CB09266A44EA00D2A55A /* ControlObserving.swift */,
+				71F6AD2D25A361A7008259C9 /* FormInputsHighlightable.swift */,
+				05D1CB0D266A4B7300D2A55A /* SubmitButton.swift */,
+				714AC1F42578460300CD8046 /* TrustedFormNavigationController.swift */,
+				719D0D76256173350087CB3F /* ViewControllerManager.swift */,
+				059A00002681FEB000DF99EE /* LoadingViewHandling.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		05DC846B2680B96E002831C0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				059AFFF52680C1A400DF99EE /* Endpoints */,
+				059AFFF82681149F00DF99EE /* Error */,
+				05DC84772680BD12002831C0 /* Protocols */,
+				05DC84732680BC6F002831C0 /* NetworkingService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		05DC84772680BD12002831C0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				05DC84702680BA97002831C0 /* Endpoint.swift */,
+				05DC846C2680B9C6002831C0 /* NetworkingProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACD21AFB9204008FA782 /* Demo for TrustedForm */,
-				F4B77F6DCC19A0C56110E301 /* Frameworks */,
-				1A1080728250B4326B5B9418 /* Pods */,
 				607FACD11AFB9204008FA782 /* Products */,
+				F5A55D9D2ACCF7DB000A9D4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
+				559D297D26E114B600F19007 /* Demo-Development.xcconfig */,
+				559D298226E11A4D00F19007 /* Demo-Production.xcconfig */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,6 +297,8 @@
 		714EC53D2578F9D50002BB05 /* TryOurDemo */ = {
 			isa = PBXGroup;
 			children = (
+				054485D9267B742B00581F7B /* About */,
+				05D1CB15266BDC6000D2A55A /* Model */,
 				71F6AD3125A375B7008259C9 /* Success */,
 				714EC5422578FAF00002BB05 /* TryOurDemoViewController.storyboard */,
 				714EC53F2578FA450002BB05 /* TryOurDemoViewController.swift */,
@@ -157,15 +309,9 @@
 		714EC54825791EC00002BB05 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				719D0C22255EA4DB0087CB3F /* Slider */,
-				714EC54525791EB10002BB05 /* CALayer+applyShadow.swift */,
-				714AC1F42578460300CD8046 /* TrustedFormNavigationController.swift */,
-				719D0D76256173350087CB3F /* ViewControllerManager.swift */,
-				7162909C259CF2B500471B32 /* UIView+border.swift */,
-				71F6AD2A25A36172008259C9 /* UIControl+addAction.swift */,
-				71F6AD2D25A361A7008259C9 /* FormInputsHighlightable.swift */,
-				7196222425A4B83A00BE68C2 /* String+localized.swift */,
-				7196225325A7366000BE68C2 /* UILabel+textWithLineSpacing.swift */,
+				0532405C26A83C1C00FD8E2B /* Config */,
+				05DC84692680B955002831C0 /* Services */,
+				05DC846A2680B963002831C0 /* Utils */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -222,6 +368,7 @@
 		71F6AD2125A222FA008259C9 /* ContactUs */ = {
 			isa = PBXGroup;
 			children = (
+				059AFFFB26811D4900DF99EE /* Model */,
 				71F6AD2225A22306008259C9 /* ContactUsViewController.swift */,
 				71F6AD2625A2231B008259C9 /* ContactUsViewController.storyboard */,
 			);
@@ -237,10 +384,10 @@
 			path = Success;
 			sourceTree = "<group>";
 		};
-		F4B77F6DCC19A0C56110E301 /* Frameworks */ = {
+		F5A55D9D2ACCF7DB000A9D4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EB33D0DE23C32D71BAE13FDD /* Pods_TrustedForm_Demo.framework */,
+				F5A55D9E2ACCF7DB000A9D4C /* TrustedForm.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,11 +399,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TrustedForm_Demo" */;
 			buildPhases = (
-				5894171226840AE722FF0D51 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				6151AB47B616DBA0D9D2BC01 /* [CP] Embed Pods Frameworks */,
 				714C906C25A8935700F6EAD3 /* Swiftlint */,
 			);
 			buildRules = (
@@ -264,6 +409,10 @@
 			dependencies = (
 			);
 			name = TrustedForm_Demo;
+			packageProductDependencies = (
+				F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */,
+				90CFA7A02AD9B578001FC692 /* TrustedFormPackage */,
+			);
 			productName = TrustedForm;
 			productReference = 607FACD01AFB9204008FA782 /* TrustedForm_Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -293,6 +442,10 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				F51549602ACCE7D4002CEFF0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				90CFA79F2AD9B578001FC692 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */,
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -312,56 +465,18 @@
 				71F6AD2725A2231B008259C9 /* ContactUsViewController.storyboard in Resources */,
 				711C2D60257E3CBB00B0EAB9 /* ExplainerViewController.storyboard in Resources */,
 				719D0C28255EA4FB0087CB3F /* SliderView.xib in Resources */,
+				0532406A26A843EA00FD8E2B /* AboutDialogViewController.xib in Resources */,
 				7162909A259CE17500471B32 /* HomeViewController.storyboard in Resources */,
 				714C906A25A8929700F6EAD3 /* WhoIsActiveProspectViewController.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				55522E4525FF7F6900573FCB /* Assets.xcassets in Resources */,
 				714EC5432578FAF00002BB05 /* TryOurDemoViewController.storyboard in Resources */,
-				607FACDD1AFB9204008FA782 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5894171226840AE722FF0D51 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TrustedForm_Demo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6151AB47B616DBA0D9D2BC01 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TrustedForm_Demo/Pods-TrustedForm_Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TrustedForm_Demo/Pods-TrustedForm_Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrustedForm_Demo/Pods-TrustedForm_Demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		714C906C25A8935700F6EAD3 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -390,21 +505,39 @@
 				719D0C24255EA4EA0087CB3F /* SliderView.swift in Sources */,
 				71F6AD2B25A36172008259C9 /* UIControl+addAction.swift in Sources */,
 				7196222525A4B83A00BE68C2 /* String+localized.swift in Sources */,
+				05DC84742680BC6F002831C0 /* NetworkingService.swift in Sources */,
+				5631226F27453F0300A114CD /* ContactResponseModel.swift in Sources */,
+				059AFFFA268114B800DF99EE /* NetworkingError.swift in Sources */,
+				05DC846D2680B9C6002831C0 /* NetworkingProtocol.swift in Sources */,
+				05D1CB0E266A4B7300D2A55A /* SubmitButton.swift in Sources */,
 				607FACD81AFB9204008FA782 /* WhoIsActiveProspectViewController.swift in Sources */,
 				71F6AD2E25A361A7008259C9 /* FormInputsHighlightable.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				05D1CB17266BDC7800D2A55A /* DemoResponseModel.swift in Sources */,
+				059AFFF42680C15C00DF99EE /* FormEndpoint.swift in Sources */,
+				059A00032682078700DF99EE /* UIViewController+Alerts.swift in Sources */,
 				714AC1F52578460300CD8046 /* TrustedFormNavigationController.swift in Sources */,
 				719D0D77256173350087CB3F /* ViewControllerManager.swift in Sources */,
+				05D1CB02266A368300D2A55A /* UserDefaultWrapper.swift in Sources */,
+				559D298026E1187F00F19007 /* Configuration.swift in Sources */,
 				7162909D259CF2B500471B32 /* UIView+border.swift in Sources */,
+				05D1CB0A266A44EA00D2A55A /* ControlObserving.swift in Sources */,
 				714EC54625791EB10002BB05 /* CALayer+applyShadow.swift in Sources */,
+				05DC84712680BA97002831C0 /* Endpoint.swift in Sources */,
 				7196225425A7366000BE68C2 /* UILabel+textWithLineSpacing.swift in Sources */,
+				05D1CB06266A36FE00D2A55A /* UserDefaults+Keys.swift in Sources */,
 				71D313E8259B855C00AA8C4E /* BottomMenuViewController.swift in Sources */,
+				0532406926A843EA00FD8E2B /* AboutDialogViewController.swift in Sources */,
+				0532405E26A83C2B00FD8E2B /* Constants.swift in Sources */,
 				71629096259CE15B00471B32 /* HomeViewController.swift in Sources */,
 				71F6AD3325A375CA008259C9 /* DemoSuccessViewController.swift in Sources */,
+				059A00012681FEB000DF99EE /* LoadingViewHandling.swift in Sources */,
 				711C2D63257E3CC800B0EAB9 /* ExplainerViewController.swift in Sources */,
 				714EC5402578FA450002BB05 /* TryOurDemoViewController.swift in Sources */,
+				059AFFF72680C21600DF99EE /* DemoRequestModel.swift in Sources */,
 				719D0C30255EB7640087CB3F /* Slide.swift in Sources */,
 				71F6AD2325A22306008259C9 /* ContactUsViewController.swift in Sources */,
+				059AFFFD26811D5400DF99EE /* ContactRequestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +558,7 @@
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 559D297D26E114B600F19007 /* Demo-Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -476,6 +610,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -483,6 +618,7 @@
 		};
 		607FACEE1AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 559D298226E11A4D00F19007 /* Demo-Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -535,21 +671,24 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E47372958E0A4F7FE02EC52 /* Pods-TrustedForm_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 8;
-				DEVELOPMENT_TEAM = KKG46J7UE8;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 24;
+				DEVELOPMENT_TEAM = HUWZL59WWP;
 				INFOPLIST_FILE = "Demo for TrustedForm/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.9;
 				MODULE_NAME = TrustedForm_Demo;
-				PRODUCT_BUNDLE_IDENTIFIER = com.activeprospect.trustedform.demo.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.activeprospect.trustedform.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -557,21 +696,24 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43A20FF10CC0A908FE5DB29C /* Pods-TrustedForm_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 8;
-				DEVELOPMENT_TEAM = KKG46J7UE8;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 24;
+				DEVELOPMENT_TEAM = HUWZL59WWP;
 				INFOPLIST_FILE = "Demo for TrustedForm/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.9;
 				MODULE_NAME = TrustedForm_Demo;
-				PRODUCT_BUNDLE_IDENTIFIER = com.activeprospect.trustedform.demo.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.activeprospect.trustedform.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -599,6 +741,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90CFA79F2AD9B578001FC692 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/activeprospect/trustedform-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F51549602ACCE7D4002CEFF0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.13;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90CFA7A02AD9B578001FC692 /* TrustedFormPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90CFA79F2AD9B578001FC692 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */;
+			productName = TrustedFormPackage;
+		};
+		F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F51549602ACCE7D4002CEFF0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

@@ -1,8 +1,7 @@
+import TrustedFormSwift
 import UIKit
-import TrustedForm
 
-final class TryOurDemoViewController: UIViewController, FormInputsHighlightable {
-    
+final class TryOurDemoViewController: UIViewController, FormInputsHighlightable, LoadingViewHandling {
     @IBOutlet private var formView: UIView!
     @IBOutlet private var fullNameTextField: UITextField!
     @IBOutlet private var emailTextField: UITextField!
@@ -12,10 +11,11 @@ final class TryOurDemoViewController: UIViewController, FormInputsHighlightable 
     @IBOutlet private var fullNameLabel: UILabel!
     @IBOutlet private var emailLabel: UILabel!
     @IBOutlet private var phoneNumberLabel: UILabel!
-    @IBOutlet private weak var trustedFormWidget: TrustedFormView!
-    @IBOutlet private weak var loadingView: UIView!
+    @IBOutlet private var trustedFormWidget: TrustedFormSwift.TrustedFormView!
+    @IBOutlet private(set) var loadingView: UIView?
     
-    private var certificate: Certificate? = nil
+    private var certificate: Certificate?
+    private var networkingService: NetworkingProtocol = NetworkingService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,27 +35,58 @@ final class TryOurDemoViewController: UIViewController, FormInputsHighlightable 
         fullNameTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         phoneNumberTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         
-        loadingView.isHidden = false
+        setLoadingViewVisibility(true, shouldAnimate: false)
         
-        TrustedForm.default.createCertificate(consentText: "TRY_OUR_DEMO_CONSENT".localized) { [weak self] (result) in
+        TrustedForm.default.createCertificate(consentText: "TRY_OUR_DEMO_CONSENT".localized) { [weak self] result in
             switch result {
             case let .success(certificate):
                 self?.certificate = certificate
                 self?.trustedFormWidget.initialize(with: certificate)
-                UIView.animate(withDuration: 0.3, animations: {
-                    self?.loadingView.alpha = 0
-                }) { _ in
-                    self?.loadingView.isHidden = true
-                }
+                self?.setLoadingViewVisibility(false)
                 
                 TrustedForm.default.startTracking(for: certificate)
-            case .failure(_):
-                break
+            case .failure:
+                self?.setLoadingViewVisibility(false)
+                
+                self?.emailTextField.isEnabled = false
+                self?.fullNameTextField.isEnabled = false
+                self?.phoneNumberTextField.isEnabled = false
+                
+                self?.displayErrorAlert(message: "TRY_OUR_DEMO_CERT_ERROR".localized)
             }
         }
         
         trustedFormWidget.delegate = self
         trustedFormWidget.isSubmitEnabled = false
+    }
+    
+    private func handle(result: Result<DemoResponseModel?, Error>) {
+        setLoadingViewVisibility(false)
+        
+        switch result {
+        case let .success(response):
+            switch response?.outcome {
+            case .failure:
+                displayErrorAlert(message: response?.reason ?? "TRY_OUR_DEMO_SUBMIT_ERROR".localized)
+            default:
+                navigateToSuccessScene()
+                clearFields()
+            }
+        case let .failure(error):
+            displayErrorAlert(message: error.localizedDescription)
+        }
+    }
+    
+    private func clearFields() {
+        [emailTextField, fullNameTextField, phoneNumberTextField].forEach { $0.text = nil }
+    }
+    
+    private func navigateToSuccessScene() {
+        let viewController: DemoSuccessViewController = UIStoryboard.instantiateInitialViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+        if let certificate = certificate {
+            TrustedForm.default.stopTracking(for: certificate)
+        }
     }
     
     @objc
@@ -65,6 +96,13 @@ final class TryOurDemoViewController: UIViewController, FormInputsHighlightable 
             (emailTextField.text ?? "") != "" &&
             (phoneNumberTextField.text ?? "") != ""
     }
+
+    @IBAction private func didTapAbout(_ sender: UIButton) {
+        let viewController = AboutDialogViewController(nibName: nil, bundle: Bundle(for: type(of: self)))
+        viewController.modalPresentationStyle = .overFullScreen
+        viewController.modalTransitionStyle = .crossDissolve
+        present(viewController, animated: true, completion: nil)
+    }
 }
 
 extension TryOurDemoViewController: TrustedFormViewDelegate {
@@ -72,57 +110,18 @@ extension TryOurDemoViewController: TrustedFormViewDelegate {
         guard let certificateId = certificate?.id else {
             return
         }
-        let queryItems = [
-            URLQueryItem(name: "email", value: emailTextField.text),
-            URLQueryItem(name: "first_name", value: fullNameTextField.text),
-            URLQueryItem(name: "phone", value: phoneNumberTextField.text),
-            URLQueryItem(name: "xxTrustedFormCertUrl", value: "https://cert.staging.trustedform.com/\(certificateId)")]
-        guard var urlComponents = URLComponents(string: "https://engage.activeprospect.com/l/801073/2021-04-09/7kj3l") else {
-            return
-        }
-        urlComponents.queryItems = queryItems
-        guard let url = urlComponents.url else {
-            return
-        }
         
-        let session = URLSession.shared
-        let request = URLRequest(url: url)
-        let task = session.dataTask(with: request as URLRequest, completionHandler: { [weak self] _, _, error in
-            DispatchQueue.main.async {
-                self?.handleSubmitResponse(error: error)
-            }
-        })
+        let model = DemoRequestModel(
+            firstName: fullNameTextField.text,
+            email: emailTextField.text,
+            phoneNumber: phoneNumberTextField.text,
+            certificateID: certificateId
+        )
         
-        self.loadingView.isHidden = false
-        UIView.animate(withDuration: 0.3, animations: {
-            self.loadingView.alpha = 1
-        })
-        task.resume()
-    }
-    
-    private func handleSubmitResponse(error: Error?) {
-        UIView.animate(withDuration: 0.3, animations: {
-            self.loadingView.alpha = 0
-        }) { _ in
-            self.loadingView.isHidden = true
-        }
+        setLoadingViewVisibility(true)
         
-        guard error == nil else {
-            let alert = UIAlertController(
-                title: nil,
-                message: "TRY_OUR_DEMO_SUBMIT_ERROR".localized,
-                preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default)
-            alert.addAction(okAction)
-            self.present(alert, animated: true)
-            
-            return
-        }
-        
-        let viewController: DemoSuccessViewController = UIStoryboard.instantiateInitialViewController()
-        self.navigationController?.pushViewController(viewController, animated: true)
-        if let certificate = self.certificate {
-            TrustedForm.default.stopTracking(for: certificate)
+        networkingService.request(endpoint: FormEndpoint.tryDemo(model: model)) { [weak self] result in
+            self?.handle(result: result)
         }
     }
 }
