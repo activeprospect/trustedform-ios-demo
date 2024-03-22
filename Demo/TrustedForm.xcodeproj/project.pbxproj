@@ -54,7 +54,7 @@
 		71F6AD2E25A361A7008259C9 /* FormInputsHighlightable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6AD2D25A361A7008259C9 /* FormInputsHighlightable.swift */; };
 		71F6AD3325A375CA008259C9 /* DemoSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6AD3225A375CA008259C9 /* DemoSuccessViewController.swift */; };
 		71F6AD3725A375D4008259C9 /* DemoSuccessViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F6AD3625A375D4008259C9 /* DemoSuccessViewController.storyboard */; };
-		90CFA7A12AD9B578001FC692 /* TrustedFormPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 90CFA7A02AD9B578001FC692 /* TrustedFormPackage */; };
+		A52F134F2BA487F400FFF16A /* TrustedFormPackage in Frameworks */ = {isa = PBXBuildFile; productRef = A52F134E2BA487F400FFF16A /* TrustedFormPackage */; };
 		F51549622ACCE7D4002CEFF0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
@@ -119,7 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F51549622ACCE7D4002CEFF0 /* IQKeyboardManagerSwift in Frameworks */,
-				90CFA7A12AD9B578001FC692 /* TrustedFormPackage in Frameworks */,
+				A52F134F2BA487F400FFF16A /* TrustedFormPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +411,7 @@
 			name = TrustedForm_Demo;
 			packageProductDependencies = (
 				F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */,
-				90CFA7A02AD9B578001FC692 /* TrustedFormPackage */,
+				A52F134E2BA487F400FFF16A /* TrustedFormPackage */,
 			);
 			productName = TrustedForm;
 			productReference = 607FACD01AFB9204008FA782 /* TrustedForm_Demo.app */;
@@ -444,7 +444,7 @@
 			mainGroup = 607FACC71AFB9204008FA782;
 			packageReferences = (
 				F51549602ACCE7D4002CEFF0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				90CFA79F2AD9B578001FC692 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */,
+				A52F134D2BA487F400FFF16A /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -679,7 +679,7 @@
 				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = HUWZL59WWP;
 				INFOPLIST_FILE = "Demo for TrustedForm/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -704,7 +704,7 @@
 				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = HUWZL59WWP;
 				INFOPLIST_FILE = "Demo for TrustedForm/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -743,11 +743,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		90CFA79F2AD9B578001FC692 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */ = {
+		A52F134D2BA487F400FFF16A /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/activeprospect/trustedform-ios-sdk.git";
+			repositoryURL = "https://github.com/activeprospect/trustedform-ios-sdk";
 			requirement = {
-				branch = master;
+				branch = "feature/trustedform-swiftui";
 				kind = branch;
 			};
 		};
@@ -762,9 +762,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		90CFA7A02AD9B578001FC692 /* TrustedFormPackage */ = {
+		A52F134E2BA487F400FFF16A /* TrustedFormPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90CFA79F2AD9B578001FC692 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */;
+			package = A52F134D2BA487F400FFF16A /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */;
 			productName = TrustedFormPackage;
 		};
 		F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */ = {

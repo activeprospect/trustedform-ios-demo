@@ -21,10 +21,10 @@
     {
       "identity" : "trustedform-ios-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/activeprospect/trustedform-ios-sdk.git",
+      "location" : "https://github.com/activeprospect/trustedform-ios-sdk",
       "state" : {
-        "branch" : "master",
-        "revision" : "0841fcd1f8cc6cdc8795f59680fb381319745e0f"
+        "branch" : "feature/trustedform-swiftui",
+        "revision" : "a49819bb75a2181b75d0134656ce26904128b732"
       }
     }
   ],
