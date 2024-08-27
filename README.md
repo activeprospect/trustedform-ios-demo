@@ -37,7 +37,7 @@ Open your project in Xcode and use the Swift Package Manager to target the corre
 
 - Go to `File` > `Swift Packages` > `Add Package Dependency...`
 - Enter the TrustedForm SDK repository URL (https://github.com/activeprospect/trustedform-ios-sdk)
-- Choose version `0.3.1` and add the package to your project
+- Choose version `0.3.2` and add the package to your project
 
 ### 4. Build and Run the Project
 
