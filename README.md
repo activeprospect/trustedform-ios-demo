@@ -33,11 +33,11 @@ DEMO_TOKEN = your_demo_token_here
 
 ### 3. Set TrustedForm SDK Version
 
-Open your project in Xcode and use the Swift Package Manager to target the correct version of the TrustedForm SDK. As of this writing, the current version is `0.3.1`. To do this:
+Open your project in Xcode and use the Swift Package Manager to target the correct version of the TrustedForm SDK. As of this writing, the current version is `0.4.0`. To do this:
 
 - Go to `File` > `Swift Packages` > `Add Package Dependency...`
 - Enter the TrustedForm SDK repository URL (https://github.com/activeprospect/trustedform-ios-sdk)
-- Choose version `0.3.2` and add the package to your project
+- Choose version `0.4.0` and add the package to your project
 
 ### 4. Build and Run the Project
 
