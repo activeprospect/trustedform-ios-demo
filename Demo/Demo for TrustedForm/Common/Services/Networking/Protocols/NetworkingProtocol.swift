@@ -1,4 +1,3 @@
-import enum Alamofire.AFError
 
 protocol NetworkingProtocol {
     func request<T: Codable>(endpoint: Endpoint,
