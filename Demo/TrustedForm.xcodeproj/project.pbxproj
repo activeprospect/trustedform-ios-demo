@@ -66,6 +66,7 @@
 		F59CF0142CF174BC00B65455 /* AdvertiserSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF0112CF174BC00B65455 /* AdvertiserSuggestionViewController.swift */; };
 		F59CF01A2CF1780800B65455 /* TrustedFormPackage in Frameworks */ = {isa = PBXBuildFile; productRef = F59CF0192CF1780800B65455 /* TrustedFormPackage */; };
 		F59CF01E2CF17D4D00B65455 /* TrustedFormPackage in Frameworks */ = {isa = PBXBuildFile; productRef = F59CF01D2CF17D4D00B65455 /* TrustedFormPackage */; };
+		F59CF0202CF1802E00B65455 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559D297F26E1187F00F19007 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,7 @@
 		F59CF0102CF174BC00B65455 /* AdvertiserSuggestionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdvertiserSuggestionViewController.storyboard; sourceTree = "<group>"; };
 		F59CF0112CF174BC00B65455 /* AdvertiserSuggestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertiserSuggestionViewController.swift; sourceTree = "<group>"; };
 		F59CF01B2CF1788B00B65455 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F59CF0212CF183AD00B65455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F5A55D9E2ACCF7DB000A9D4C /* TrustedForm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TrustedForm.xcframework; path = ../build/TrustedForm.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				0532405D26A83C2B00FD8E2B /* Constants.swift */,
-				559D297F26E1187F00F19007 /* Configuration.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -275,6 +276,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				F59CF01F2CF17FA800B65455 /* Shared */,
 				607FACD21AFB9204008FA782 /* UIKitDemo */,
 				F59CEFF92CF16F6700B65455 /* SwiftUIDemo */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -294,9 +296,9 @@
 		607FACD21AFB9204008FA782 /* UIKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD31AFB9204008FA782 /* Supporting Files */,
 				714EC54825791EC00002BB05 /* Common */,
 				719D0D7E25617B830087CB3F /* Scenes */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACDC1AFB9204008FA782 /* Assets.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -309,8 +311,6 @@
 			isa = PBXGroup;
 			children = (
 				F59CF01B2CF1788B00B65455 /* Info.plist */,
-				559D297D26E114B600F19007 /* Demo-Development.xcconfig */,
-				559D298226E11A4D00F19007 /* Demo-Production.xcconfig */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -418,6 +418,7 @@
 		F59CEFF92CF16F6700B65455 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F59CF0212CF183AD00B65455 /* Info.plist */,
 				F59CF00B2CF170CA00B65455 /* Screens */,
 				F59CF0072CF170CA00B65455 /* Views */,
 				F59CF0082CF170CA00B65455 /* AppContent.swift */,
@@ -460,6 +461,16 @@
 				F59CF0112CF174BC00B65455 /* AdvertiserSuggestionViewController.swift */,
 			);
 			path = AdvertiserSuggestion;
+			sourceTree = "<group>";
+		};
+		F59CF01F2CF17FA800B65455 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				559D297F26E1187F00F19007 /* Configuration.swift */,
+				559D297D26E114B600F19007 /* Demo-Development.xcconfig */,
+				559D298226E11A4D00F19007 /* Demo-Production.xcconfig */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		F5A55D9D2ACCF7DB000A9D4C /* Frameworks */ = {
@@ -658,6 +669,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59CF0202CF1802E00B65455 /* Configuration.swift in Sources */,
 				F59CF00C2CF170CA00B65455 /* CheckboxToggleStyle.swift in Sources */,
 				F59CF00F2CF170CA00B65455 /* ContactInfoScreen.swift in Sources */,
 				F59CEFFB2CF16F6700B65455 /* SwiftUIDemoApp.swift in Sources */,
@@ -865,6 +877,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -908,6 +921,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -12,7 +12,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         ViewControllerManager().setInitialViewController(window: window)
 
-        let trustedFormToken: String = try! Configuration.value(for: "TRUSTEDFORM_TOKEN")
+        let trustedFormToken: String = try! BuildConfiguration.value(for: "TRUSTEDFORM_TOKEN")
 
         TrustedForm.default.configure(
             appId: "sborrazas-prod",

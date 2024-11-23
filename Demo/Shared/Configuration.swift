@@ -1,11 +1,12 @@
 import Foundation
 
-enum Configuration {
+enum BuildConfiguration {
     enum Error: Swift.Error {
         case missingKey, invalidValue
     }
 
     static func value<T>(for key: String) throws -> T where T: LosslessStringConvertible {
+        print("----------Key: \(key)")
         guard let object = Bundle.main.object(forInfoDictionaryKey:key) else {
             throw Error.missingKey
         }
