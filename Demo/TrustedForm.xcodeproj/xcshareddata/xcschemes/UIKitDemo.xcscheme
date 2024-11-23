@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "TrustedForm_Demo.app"
-               BlueprintName = "TrustedForm_Demo"
+               BuildableName = "UIKitDemo.app"
+               BlueprintName = "UIKitDemo"
                ReferencedContainer = "container:TrustedForm.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TrustedForm_Demo.app"
-            BlueprintName = "TrustedForm_Demo"
+            BuildableName = "UIKitDemo.app"
+            BlueprintName = "UIKitDemo"
             ReferencedContainer = "container:TrustedForm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TrustedForm_Demo.app"
-            BlueprintName = "TrustedForm_Demo"
+            BuildableName = "UIKitDemo.app"
+            BlueprintName = "UIKitDemo"
             ReferencedContainer = "container:TrustedForm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

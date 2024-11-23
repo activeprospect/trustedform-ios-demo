@@ -56,6 +56,14 @@
 		71F6AD3725A375D4008259C9 /* DemoSuccessViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F6AD3625A375D4008259C9 /* DemoSuccessViewController.storyboard */; };
 		90CFA7A12AD9B578001FC692 /* TrustedFormPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 90CFA7A02AD9B578001FC692 /* TrustedFormPackage */; };
 		F51549622ACCE7D4002CEFF0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */; };
+		F59CEFFB2CF16F6700B65455 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CEFFA2CF16F6700B65455 /* SwiftUIDemoApp.swift */; };
+		F59CEFFD2CF16F6700B65455 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CEFFC2CF16F6700B65455 /* ContentView.swift */; };
+		F59CEFFF2CF16F6900B65455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59CEFFE2CF16F6900B65455 /* Assets.xcassets */; };
+		F59CF0022CF16F6900B65455 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59CF0012CF16F6900B65455 /* Preview Assets.xcassets */; };
+		F59CF00C2CF170CA00B65455 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF0062CF170CA00B65455 /* CheckboxToggleStyle.swift */; };
+		F59CF00D2CF170CA00B65455 /* AppContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF0082CF170CA00B65455 /* AppContent.swift */; };
+		F59CF00E2CF170CA00B65455 /* AdvertiserSuggestionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF0092CF170CA00B65455 /* AdvertiserSuggestionScreen.swift */; };
+		F59CF00F2CF170CA00B65455 /* ContactInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF00A2CF170CA00B65455 /* ContactInfoScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,7 +88,7 @@
 		559D297F26E1187F00F19007 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		559D298226E11A4D00F19007 /* Demo-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Demo-Production.xcconfig"; sourceTree = "<group>"; };
 		5631226E27453F0300A114CD /* ContactResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactResponseModel.swift; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* TrustedForm_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrustedForm_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* UIKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* WhoIsActiveProspectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoIsActiveProspectViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +118,15 @@
 		71F6AD2D25A361A7008259C9 /* FormInputsHighlightable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInputsHighlightable.swift; sourceTree = "<group>"; };
 		71F6AD3225A375CA008259C9 /* DemoSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSuccessViewController.swift; sourceTree = "<group>"; };
 		71F6AD3625A375D4008259C9 /* DemoSuccessViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DemoSuccessViewController.storyboard; sourceTree = "<group>"; };
+		F59CEFF82CF16F6700B65455 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59CEFFA2CF16F6700B65455 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
+		F59CEFFC2CF16F6700B65455 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F59CEFFE2CF16F6900B65455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F59CF0012CF16F6900B65455 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F59CF0062CF170CA00B65455 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		F59CF0082CF170CA00B65455 /* AppContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContent.swift; sourceTree = "<group>"; };
+		F59CF0092CF170CA00B65455 /* AdvertiserSuggestionScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertiserSuggestionScreen.swift; sourceTree = "<group>"; };
+		F59CF00A2CF170CA00B65455 /* ContactInfoScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInfoScreen.swift; sourceTree = "<group>"; };
 		F5A55D9E2ACCF7DB000A9D4C /* TrustedForm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TrustedForm.xcframework; path = ../build/TrustedForm.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +137,13 @@
 			files = (
 				F51549622ACCE7D4002CEFF0 /* IQKeyboardManagerSwift in Frameworks */,
 				90CFA7A12AD9B578001FC692 /* TrustedFormPackage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59CEFF52CF16F6700B65455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +271,8 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACD21AFB9204008FA782 /* Demo for TrustedForm */,
+				607FACD21AFB9204008FA782 /* UIKitDemo */,
+				F59CEFF92CF16F6700B65455 /* SwiftUIDemo */,
 				607FACD11AFB9204008FA782 /* Products */,
 				F5A55D9D2ACCF7DB000A9D4C /* Frameworks */,
 			);
@@ -256,12 +281,13 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* TrustedForm_Demo.app */,
+				607FACD01AFB9204008FA782 /* UIKitDemo.app */,
+				F59CEFF82CF16F6700B65455 /* SwiftUIDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Demo for TrustedForm */ = {
+		607FACD21AFB9204008FA782 /* UIKitDemo */ = {
 			isa = PBXGroup;
 			children = (
 				714EC54825791EC00002BB05 /* Common */,
@@ -272,7 +298,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				7196222125A4B3DB00BE68C2 /* Localizable.strings */,
 			);
-			path = "Demo for TrustedForm";
+			path = UIKitDemo;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
@@ -384,6 +410,45 @@
 			path = Success;
 			sourceTree = "<group>";
 		};
+		F59CEFF92CF16F6700B65455 /* SwiftUIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F59CF00B2CF170CA00B65455 /* Screens */,
+				F59CF0072CF170CA00B65455 /* Views */,
+				F59CF0082CF170CA00B65455 /* AppContent.swift */,
+				F59CEFFC2CF16F6700B65455 /* ContentView.swift */,
+				F59CEFFA2CF16F6700B65455 /* SwiftUIDemoApp.swift */,
+				F59CEFFE2CF16F6900B65455 /* Assets.xcassets */,
+				F59CF0002CF16F6900B65455 /* Preview Content */,
+			);
+			path = SwiftUIDemo;
+			sourceTree = "<group>";
+		};
+		F59CF0002CF16F6900B65455 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F59CF0012CF16F6900B65455 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F59CF0072CF170CA00B65455 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F59CF0062CF170CA00B65455 /* CheckboxToggleStyle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F59CF00B2CF170CA00B65455 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F59CF0092CF170CA00B65455 /* AdvertiserSuggestionScreen.swift */,
+				F59CF00A2CF170CA00B65455 /* ContactInfoScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		F5A55D9D2ACCF7DB000A9D4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,9 +460,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* TrustedForm_Demo */ = {
+		607FACCF1AFB9204008FA782 /* UIKitDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TrustedForm_Demo" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "UIKitDemo" */;
 			buildPhases = (
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
@@ -408,13 +473,30 @@
 			);
 			dependencies = (
 			);
-			name = TrustedForm_Demo;
+			name = UIKitDemo;
 			packageProductDependencies = (
 				F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */,
 				90CFA7A02AD9B578001FC692 /* TrustedFormPackage */,
 			);
 			productName = TrustedForm;
-			productReference = 607FACD01AFB9204008FA782 /* TrustedForm_Demo.app */;
+			productReference = 607FACD01AFB9204008FA782 /* UIKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F59CEFF72CF16F6700B65455 /* SwiftUIDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59CF0032CF16F6900B65455 /* Build configuration list for PBXNativeTarget "SwiftUIDemo" */;
+			buildPhases = (
+				F59CEFF42CF16F6700B65455 /* Sources */,
+				F59CEFF52CF16F6700B65455 /* Frameworks */,
+				F59CEFF62CF16F6700B65455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIDemo;
+			productName = SwiftUIDemo;
+			productReference = F59CEFF82CF16F6700B65455 /* SwiftUIDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -423,13 +505,16 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = Devscale;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
+					};
+					F59CEFF72CF16F6700B65455 = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
@@ -450,7 +535,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* TrustedForm_Demo */,
+				607FACCF1AFB9204008FA782 /* UIKitDemo */,
+				F59CEFF72CF16F6700B65455 /* SwiftUIDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -471,6 +557,15 @@
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				55522E4525FF7F6900573FCB /* Assets.xcassets in Resources */,
 				714EC5432578FAF00002BB05 /* TryOurDemoViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59CEFF62CF16F6700B65455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59CF0022CF16F6900B65455 /* Preview Assets.xcassets in Resources */,
+				F59CEFFF2CF16F6900B65455 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +633,19 @@
 				719D0C30255EB7640087CB3F /* Slide.swift in Sources */,
 				71F6AD2325A22306008259C9 /* ContactUsViewController.swift in Sources */,
 				059AFFFD26811D5400DF99EE /* ContactRequestModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59CEFF42CF16F6700B65455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59CEFFD2CF16F6700B65455 /* ContentView.swift in Sources */,
+				F59CF00C2CF170CA00B65455 /* CheckboxToggleStyle.swift in Sources */,
+				F59CF00F2CF170CA00B65455 /* ContactInfoScreen.swift in Sources */,
+				F59CEFFB2CF16F6700B65455 /* SwiftUIDemoApp.swift in Sources */,
+				F59CF00D2CF170CA00B65455 /* AppContent.swift in Sources */,
+				F59CF00E2CF170CA00B65455 /* AdvertiserSuggestionScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,6 +827,91 @@
 			};
 			name = Release;
 		};
+		F59CF0042CF16F6900B65455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AR65Q88WC;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.activeProspect.trustedform.demo.SwiftUIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F59CF0052CF16F6900B65455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AR65Q88WC;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.activeProspect.trustedform.demo.SwiftUIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -731,11 +924,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TrustedForm_Demo" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "UIKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59CF0032CF16F6900B65455 /* Build configuration list for PBXNativeTarget "SwiftUIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59CF0042CF16F6900B65455 /* Debug */,
+				F59CF0052CF16F6900B65455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -747,7 +949,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/activeprospect/trustedform-ios-sdk.git";
 			requirement = {
-				branch = master;
+				branch = release/0.5.0;
 				kind = branch;
 			};
 		};

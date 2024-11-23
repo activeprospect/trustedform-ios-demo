@@ -11,7 +11,7 @@ final class TryOurDemoViewController: UIViewController, FormInputsHighlightable,
     @IBOutlet private var fullNameLabel: UILabel!
     @IBOutlet private var emailLabel: UILabel!
     @IBOutlet private var phoneNumberLabel: UILabel!
-    @IBOutlet private var trustedFormWidget: TrustedFormSwift.TrustedFormView!
+//    @IBOutlet private var trustedFormWidget: TrustedFormSwift.TrustedFormView!
     @IBOutlet private(set) var loadingView: UIView?
     
     private var certificate: Certificate?
