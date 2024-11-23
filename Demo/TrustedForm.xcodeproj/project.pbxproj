@@ -56,7 +56,6 @@
 		71F6AD3725A375D4008259C9 /* DemoSuccessViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F6AD3625A375D4008259C9 /* DemoSuccessViewController.storyboard */; };
 		F51549622ACCE7D4002CEFF0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */; };
 		F59CEFFB2CF16F6700B65455 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CEFFA2CF16F6700B65455 /* SwiftUIDemoApp.swift */; };
-		F59CEFFD2CF16F6700B65455 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CEFFC2CF16F6700B65455 /* ContentView.swift */; };
 		F59CEFFF2CF16F6900B65455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59CEFFE2CF16F6900B65455 /* Assets.xcassets */; };
 		F59CF0022CF16F6900B65455 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59CF0012CF16F6900B65455 /* Preview Assets.xcassets */; };
 		F59CF00C2CF170CA00B65455 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF0062CF170CA00B65455 /* CheckboxToggleStyle.swift */; };
@@ -66,6 +65,7 @@
 		F59CF0132CF174BC00B65455 /* AdvertiserSuggestionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59CF0102CF174BC00B65455 /* AdvertiserSuggestionViewController.storyboard */; };
 		F59CF0142CF174BC00B65455 /* AdvertiserSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF0112CF174BC00B65455 /* AdvertiserSuggestionViewController.swift */; };
 		F59CF01A2CF1780800B65455 /* TrustedFormPackage in Frameworks */ = {isa = PBXBuildFile; productRef = F59CF0192CF1780800B65455 /* TrustedFormPackage */; };
+		F59CF01E2CF17D4D00B65455 /* TrustedFormPackage in Frameworks */ = {isa = PBXBuildFile; productRef = F59CF01D2CF17D4D00B65455 /* TrustedFormPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,7 +121,6 @@
 		71F6AD3625A375D4008259C9 /* DemoSuccessViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DemoSuccessViewController.storyboard; sourceTree = "<group>"; };
 		F59CEFF82CF16F6700B65455 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59CEFFA2CF16F6700B65455 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
-		F59CEFFC2CF16F6700B65455 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F59CEFFE2CF16F6900B65455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F59CF0012CF16F6900B65455 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F59CF0062CF170CA00B65455 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
@@ -148,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59CF01E2CF17D4D00B65455 /* TrustedFormPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +421,6 @@
 				F59CF00B2CF170CA00B65455 /* Screens */,
 				F59CF0072CF170CA00B65455 /* Views */,
 				F59CF0082CF170CA00B65455 /* AppContent.swift */,
-				F59CEFFC2CF16F6700B65455 /* ContentView.swift */,
 				F59CEFFA2CF16F6700B65455 /* SwiftUIDemoApp.swift */,
 				F59CEFFE2CF16F6900B65455 /* Assets.xcassets */,
 				F59CF0002CF16F6900B65455 /* Preview Content */,
@@ -509,6 +508,9 @@
 			dependencies = (
 			);
 			name = SwiftUIDemo;
+			packageProductDependencies = (
+				F59CF01D2CF17D4D00B65455 /* TrustedFormPackage */,
+			);
 			productName = SwiftUIDemo;
 			productReference = F59CEFF82CF16F6700B65455 /* SwiftUIDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -656,7 +658,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F59CEFFD2CF16F6700B65455 /* ContentView.swift in Sources */,
 				F59CF00C2CF170CA00B65455 /* CheckboxToggleStyle.swift in Sources */,
 				F59CF00F2CF170CA00B65455 /* ContactInfoScreen.swift in Sources */,
 				F59CEFFB2CF16F6700B65455 /* SwiftUIDemoApp.swift in Sources */,
@@ -986,6 +987,11 @@
 			productName = IQKeyboardManagerSwift;
 		};
 		F59CF0192CF1780800B65455 /* TrustedFormPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F59CF0182CF1780800B65455 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */;
+			productName = TrustedFormPackage;
+		};
+		F59CF01D2CF17D4D00B65455 /* TrustedFormPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F59CF0182CF1780800B65455 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */;
 			productName = TrustedFormPackage;
