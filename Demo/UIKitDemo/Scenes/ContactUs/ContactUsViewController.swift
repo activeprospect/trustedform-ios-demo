@@ -29,7 +29,7 @@ final class ContactUsViewController: UIViewController, FormInputsHighlightable, 
         submitButton.isEnabled = false
 
         let textfields: [UIControl] = [emailTextField, firstNameTextField, lastNameTextField, phoneNumberTextField]
-        setupInputViews(textfields)
+        setupHighlighting(textfields)
         observe(event: .editingChanged, of: textfields)
         
         messageTextView.delegate = self

@@ -54,7 +54,6 @@
 		71F6AD2E25A361A7008259C9 /* FormInputsHighlightable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6AD2D25A361A7008259C9 /* FormInputsHighlightable.swift */; };
 		71F6AD3325A375CA008259C9 /* DemoSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6AD3225A375CA008259C9 /* DemoSuccessViewController.swift */; };
 		71F6AD3725A375D4008259C9 /* DemoSuccessViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F6AD3625A375D4008259C9 /* DemoSuccessViewController.storyboard */; };
-		90CFA7A12AD9B578001FC692 /* TrustedFormPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 90CFA7A02AD9B578001FC692 /* TrustedFormPackage */; };
 		F51549622ACCE7D4002CEFF0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */; };
 		F59CEFFB2CF16F6700B65455 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CEFFA2CF16F6700B65455 /* SwiftUIDemoApp.swift */; };
 		F59CEFFD2CF16F6700B65455 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CEFFC2CF16F6700B65455 /* ContentView.swift */; };
@@ -64,6 +63,9 @@
 		F59CF00D2CF170CA00B65455 /* AppContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF0082CF170CA00B65455 /* AppContent.swift */; };
 		F59CF00E2CF170CA00B65455 /* AdvertiserSuggestionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF0092CF170CA00B65455 /* AdvertiserSuggestionScreen.swift */; };
 		F59CF00F2CF170CA00B65455 /* ContactInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF00A2CF170CA00B65455 /* ContactInfoScreen.swift */; };
+		F59CF0132CF174BC00B65455 /* AdvertiserSuggestionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59CF0102CF174BC00B65455 /* AdvertiserSuggestionViewController.storyboard */; };
+		F59CF0142CF174BC00B65455 /* AdvertiserSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CF0112CF174BC00B65455 /* AdvertiserSuggestionViewController.swift */; };
+		F59CF01A2CF1780800B65455 /* TrustedFormPackage in Frameworks */ = {isa = PBXBuildFile; productRef = F59CF0192CF1780800B65455 /* TrustedFormPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,7 +91,6 @@
 		559D298226E11A4D00F19007 /* Demo-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Demo-Production.xcconfig"; sourceTree = "<group>"; };
 		5631226E27453F0300A114CD /* ContactResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactResponseModel.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* UIKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* WhoIsActiveProspectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoIsActiveProspectViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +128,9 @@
 		F59CF0082CF170CA00B65455 /* AppContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContent.swift; sourceTree = "<group>"; };
 		F59CF0092CF170CA00B65455 /* AdvertiserSuggestionScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertiserSuggestionScreen.swift; sourceTree = "<group>"; };
 		F59CF00A2CF170CA00B65455 /* ContactInfoScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInfoScreen.swift; sourceTree = "<group>"; };
+		F59CF0102CF174BC00B65455 /* AdvertiserSuggestionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdvertiserSuggestionViewController.storyboard; sourceTree = "<group>"; };
+		F59CF0112CF174BC00B65455 /* AdvertiserSuggestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertiserSuggestionViewController.swift; sourceTree = "<group>"; };
+		F59CF01B2CF1788B00B65455 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A55D9E2ACCF7DB000A9D4C /* TrustedForm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TrustedForm.xcframework; path = ../build/TrustedForm.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,8 +139,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59CF01A2CF1780800B65455 /* TrustedFormPackage in Frameworks */,
 				F51549622ACCE7D4002CEFF0 /* IQKeyboardManagerSwift in Frameworks */,
-				90CFA7A12AD9B578001FC692 /* TrustedFormPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +308,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
+				F59CF01B2CF1788B00B65455 /* Info.plist */,
 				559D297D26E114B600F19007 /* Demo-Development.xcconfig */,
 				559D298226E11A4D00F19007 /* Demo-Production.xcconfig */,
 			);
@@ -364,6 +368,7 @@
 		719D0D7E25617B830087CB3F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F59CF0122CF174BC00B65455 /* AdvertiserSuggestion */,
 				71D313E6259B854E00AA8C4E /* BottomMenu */,
 				71629093259CE14F00471B32 /* Home */,
 				71F6AD2125A222FA008259C9 /* ContactUs */,
@@ -449,6 +454,15 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		F59CF0122CF174BC00B65455 /* AdvertiserSuggestion */ = {
+			isa = PBXGroup;
+			children = (
+				F59CF0102CF174BC00B65455 /* AdvertiserSuggestionViewController.storyboard */,
+				F59CF0112CF174BC00B65455 /* AdvertiserSuggestionViewController.swift */,
+			);
+			path = AdvertiserSuggestion;
+			sourceTree = "<group>";
+		};
 		F5A55D9D2ACCF7DB000A9D4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,7 +490,7 @@
 			name = UIKitDemo;
 			packageProductDependencies = (
 				F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */,
-				90CFA7A02AD9B578001FC692 /* TrustedFormPackage */,
+				F59CF0192CF1780800B65455 /* TrustedFormPackage */,
 			);
 			productName = TrustedForm;
 			productReference = 607FACD01AFB9204008FA782 /* UIKitDemo.app */;
@@ -529,7 +543,7 @@
 			mainGroup = 607FACC71AFB9204008FA782;
 			packageReferences = (
 				F51549602ACCE7D4002CEFF0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				90CFA79F2AD9B578001FC692 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */,
+				F59CF0182CF1780800B65455 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -550,6 +564,7 @@
 				7196222225A4B3DB00BE68C2 /* Localizable.strings in Resources */,
 				71F6AD2725A2231B008259C9 /* ContactUsViewController.storyboard in Resources */,
 				711C2D60257E3CBB00B0EAB9 /* ExplainerViewController.storyboard in Resources */,
+				F59CF0132CF174BC00B65455 /* AdvertiserSuggestionViewController.storyboard in Resources */,
 				719D0C28255EA4FB0087CB3F /* SliderView.xib in Resources */,
 				0532406A26A843EA00FD8E2B /* AboutDialogViewController.xib in Resources */,
 				7162909A259CE17500471B32 /* HomeViewController.storyboard in Resources */,
@@ -633,6 +648,7 @@
 				719D0C30255EB7640087CB3F /* Slide.swift in Sources */,
 				71F6AD2325A22306008259C9 /* ContactUsViewController.swift in Sources */,
 				059AFFFD26811D5400DF99EE /* ContactRequestModel.swift in Sources */,
+				F59CF0142CF174BC00B65455 /* AdvertiserSuggestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,8 +802,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = HUWZL59WWP;
-				INFOPLIST_FILE = "Demo for TrustedForm/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				INFOPLIST_FILE = "UIKitDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -811,8 +827,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = HUWZL59WWP;
-				INFOPLIST_FILE = "Demo for TrustedForm/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				INFOPLIST_FILE = "UIKitDemo/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -945,14 +961,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		90CFA79F2AD9B578001FC692 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/activeprospect/trustedform-ios-sdk.git";
-			requirement = {
-				branch = release/0.5.0;
-				kind = branch;
-			};
-		};
 		F51549602ACCE7D4002CEFF0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
@@ -961,18 +969,26 @@
 				minimumVersion = 6.5.13;
 			};
 		};
+		F59CF0182CF1780800B65455 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:activeprospect/trustedform-ios-sdk.git";
+			requirement = {
+				branch = release/0.5.0;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		90CFA7A02AD9B578001FC692 /* TrustedFormPackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 90CFA79F2AD9B578001FC692 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */;
-			productName = TrustedFormPackage;
-		};
 		F51549612ACCE7D4002CEFF0 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F51549602ACCE7D4002CEFF0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		F59CF0192CF1780800B65455 /* TrustedFormPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F59CF0182CF1780800B65455 /* XCRemoteSwiftPackageReference "trustedform-ios-sdk" */;
+			productName = TrustedFormPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

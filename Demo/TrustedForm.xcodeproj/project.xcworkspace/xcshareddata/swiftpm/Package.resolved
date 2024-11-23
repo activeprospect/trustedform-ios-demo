@@ -1,5 +1,5 @@
 {
-  "originHash" : "8edc9ced4876ed3e19def78ec49dbeb096228c75374bc1013862f575b5937fa2",
+  "originHash" : "934e288d6ed962c67cf726becc973efb8fb96c43a53bcaa3df0e32fb27f75bab",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -22,7 +22,7 @@
     {
       "identity" : "trustedform-ios-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/activeprospect/trustedform-ios-sdk.git",
+      "location" : "git@github.com:activeprospect/trustedform-ios-sdk.git",
       "state" : {
         "branch" : "release/0.5.0",
         "revision" : "683982973afc46eb5a03f9cef9e82f748aef3117"
