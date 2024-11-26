@@ -93,7 +93,14 @@ final class BottomMenuViewController: UITabBarController {
         
         let swiftUIViewTab = self.createSwiftUIViewTab()
         
-        setViewControllers([homeNavigationController, tryDemoNavigationController, contactUsNavigationController, swiftUIViewTab], animated: false)
+        setViewControllers(
+            [
+                homeNavigationController, 
+                tryDemoNavigationController,
+                contactUsNavigationController
+            ],
+            animated: false
+        )
         delegate = self
         tabBar.tintColor = #colorLiteral(red: 0.1817100644, green: 0.8225213885, blue: 0.5138735771, alpha: 1)
     }
