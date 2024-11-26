@@ -2,7 +2,7 @@ import UIKit
 
 final class ViewControllerManager {
     func setInitialViewController(window: UIWindow? = nil) {
-        let activeProspectViewController: WhoIsActiveProspectViewController = UIStoryboard.instantiateInitialViewController()
+        let activeProspectViewController: WhoIsActiveProspectViewController = UIStoryboard.instantiateViewController()
         
         let rootViewController = UserDefaults.hasSeenIntro
             ? BottomMenuViewController()
@@ -26,7 +26,7 @@ final class ViewControllerManager {
 }
 
 extension UIStoryboard {
-    static func instantiateInitialViewController<Controller: UIViewController>(name: String? = nil, bundle: Bundle = Bundle.main) -> Controller {
+    static func instantiateViewController<Controller: UIViewController>(name: String? = nil, bundle: Bundle = Bundle.main) -> Controller {
         let controllerName = name ?? String(describing: Controller.self)
         let storyboard = UIStoryboard(name: controllerName, bundle: bundle)
         guard let controller = storyboard.instantiateInitialViewController() as? Controller else {

@@ -34,7 +34,7 @@ final class WhoIsActiveProspectViewController: UIViewController {
     }
 
     @IBAction private func `continue`() {
-        let viewController: ExplainerViewController = UIStoryboard.instantiateInitialViewController()
+        let viewController: ExplainerViewController = UIStoryboard.instantiateViewController()
         navigationController?.pushViewController(viewController, animated: true)
         UserDefaults.hasSeenIntro = true
     }

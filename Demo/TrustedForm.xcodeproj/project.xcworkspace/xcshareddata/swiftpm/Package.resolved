@@ -1,12 +1,13 @@
 {
+  "originHash" : "934e288d6ed962c67cf726becc973efb8fb96c43a53bcaa3df0e32fb27f75bab",
   "pins" : [
     {
       "identity" : "alamofire",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Alamofire/Alamofire.git",
       "state" : {
-        "revision" : "b2fa556e4e48cbf06cf8c63def138c98f4b811fa",
-        "version" : "5.8.0"
+        "revision" : "e16d3481f5ed35f0472cb93350085853d754913f",
+        "version" : "5.10.1"
       }
     },
     {
@@ -21,12 +22,12 @@
     {
       "identity" : "trustedform-ios-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/activeprospect/trustedform-ios-sdk.git",
+      "location" : "git@github.com:activeprospect/trustedform-ios-sdk.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "0841fcd1f8cc6cdc8795f59680fb381319745e0f"
+        "branch" : "release/0.5.0",
+        "revision" : "683982973afc46eb5a03f9cef9e82f748aef3117"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

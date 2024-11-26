@@ -3,7 +3,7 @@ import UIKit
 protocol FormInputsHighlightable {}
 
 extension FormInputsHighlightable {
-    func setupInputViews(_ views: [UIControl]) {
+    func setupHighlighting(_ views: [UIControl]) {
         for view in views {
             view.setupBorder()
             view.addAction(for: .editingDidBegin) { [weak view] in

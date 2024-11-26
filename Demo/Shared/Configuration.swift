@@ -1,6 +1,6 @@
 import Foundation
 
-enum Configuration {
+enum BuildConfiguration {
     enum Error: Swift.Error {
         case missingKey, invalidValue
     }

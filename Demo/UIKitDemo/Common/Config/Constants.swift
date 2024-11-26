@@ -8,11 +8,11 @@ enum Constants {
         static let privacyPolicy = URL(string: "https://activeprospect.com/privacy-policy/")!
         
         enum Endpoints {
-            static let contactForm = URL(string: "https://" + (try! Configuration.value(for: "CONTACT_URL")))!
+            static let contactForm = URL(string: "https://" + (try! BuildConfiguration.value(for: "CONTACT_URL")))!
             
-            static let certificate = URL(string: "https://" + (try! Configuration.value(for: "CERTIFICATE_URL")))!
+            static let certificate = URL(string: "https://" + (try! BuildConfiguration.value(for: "CERTIFICATE_URL")))!
 
-            static let demoForm = URL(string: "https://" + (try! Configuration.value(for: "DEMO_URL")))!
+            static let demoForm = URL(string: "https://" + (try! BuildConfiguration.value(for: "DEMO_URL")))!
         }
     }
 }

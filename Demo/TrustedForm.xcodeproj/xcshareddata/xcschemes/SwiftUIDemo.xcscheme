@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1500"
+   LastUpgradeVersion = "1540"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -14,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "TrustedForm_Demo.app"
-               BlueprintName = "TrustedForm_Demo"
+               BlueprintIdentifier = "F59CEFF72CF16F6700B65455"
+               BuildableName = "SwiftUIDemo.app"
+               BlueprintName = "SwiftUIDemo"
                ReferencedContainer = "container:TrustedForm.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TrustedForm_Demo.app"
-            BlueprintName = "TrustedForm_Demo"
+            BlueprintIdentifier = "F59CEFF72CF16F6700B65455"
+            BuildableName = "SwiftUIDemo.app"
+            BlueprintName = "SwiftUIDemo"
             ReferencedContainer = "container:TrustedForm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -60,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TrustedForm_Demo.app"
-            BlueprintName = "TrustedForm_Demo"
+            BlueprintIdentifier = "F59CEFF72CF16F6700B65455"
+            BuildableName = "SwiftUIDemo.app"
+            BlueprintName = "SwiftUIDemo"
             ReferencedContainer = "container:TrustedForm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

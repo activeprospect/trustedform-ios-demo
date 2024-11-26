@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AdvertiserSuggestion-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController title="AdvertiserSuggestion" id="Y6W-OH-hqX" customClass="AdvertiserSuggestionViewController" customModule="UIKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ah4-zN-rl6">
+                                <rect key="frame" x="16" y="59" width="361" height="503"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gCP-F5-xYk">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[advertiser A copy goes here]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFW-wm-EzJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cba-3v-DGW">
+                                                <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="45"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Get Info"/>
+                                                <state key="selected" title=" "/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Get Info"/>
+                                                <connections>
+                                                    <action selector="advertiserTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7NQ-6X-QY3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="ayr-Bp-zgm"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rXZ-RO-EGy">
+                                        <rect key="frame" x="0.0" y="61" width="361" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[advertiser B copy goes here]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGg-Lp-w7e">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dF-dX-CRr">
+                                                <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="45"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Get Info"/>
+                                                <connections>
+                                                    <action selector="advertiserTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AXJ-9E-F0w"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="qbb-fW-28O"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3pJ-6B-pDM">
+                                        <rect key="frame" x="0.0" y="122" width="361" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[advertiser C copy goes here]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsE-WY-gMM">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXQ-Ff-aAw">
+                                                <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="45"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Get Info"/>
+                                                <connections>
+                                                    <action selector="advertiserTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KId-FI-a3h"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="cOa-BK-viS"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ry9-2o-iRV">
+                                        <rect key="frame" x="0.0" y="183" width="361" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[advertiser D copy goes here]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-xV-uDe">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14R-vw-mD9">
+                                                <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="45"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Get Info"/>
+                                                <connections>
+                                                    <action selector="advertiserTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="P8N-vP-CuV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="vUh-EC-4tI"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="AN7-PY-82q">
+                                        <rect key="frame" x="0.0" y="244" width="361" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[advertiser E copy goes here]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be5-IN-m1F">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbs-Ne-a6Y">
+                                                <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="45"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="Get Info"/>
+                                                <connections>
+                                                    <action selector="advertiserTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="h8h-En-Fzw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="EIY-7U-VFu"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLI-oR-pPz">
+                                        <rect key="frame" x="0.0" y="305" width="361" height="122"/>
+                                        <string key="text">By selecting an advertiser, you agree to receive communications from them about their products and services. You understand these communications may be through phone calls, text messages, or emails, and you can opt-out at any time.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5M-wj-Pjo">
+                                        <rect key="frame" x="0.0" y="443" width="361" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="aZh-E2-yRu"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Stop Tracking"/>
+                                        <connections>
+                                            <action selector="stopTrackingTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Lfy-EY-T4T"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ah4-zN-rl6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="4gr-fZ-iJx"/>
+                            <constraint firstItem="ah4-zN-rl6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="SMA-CA-aYS"/>
+                            <constraint firstAttribute="trailing" secondItem="ah4-zN-rl6" secondAttribute="trailing" constant="16" id="alh-KG-3R2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="consentLabel" destination="zLI-oR-pPz" id="vU8-3f-iFa"/>
+                        <outletCollection property="submitButtons" destination="Cba-3v-DGW" collectionClass="NSMutableArray" id="L69-Zo-ilF"/>
+                        <outletCollection property="submitButtons" destination="3dF-dX-CRr" collectionClass="NSMutableArray" id="owL-HZ-OcX"/>
+                        <outletCollection property="submitButtons" destination="zXQ-Ff-aAw" collectionClass="NSMutableArray" id="WfJ-Fh-RJn"/>
+                        <outletCollection property="submitButtons" destination="14R-vw-mD9" collectionClass="NSMutableArray" id="BKy-Sk-ytE"/>
+                        <outletCollection property="submitButtons" destination="kbs-Ne-a6Y" collectionClass="NSMutableArray" id="Fto-Iz-fb3"/>
+                        <outletCollection property="advertiserLabels" destination="WFW-wm-EzJ" collectionClass="NSMutableArray" id="Ylo-Y1-p2Q"/>
+                        <outletCollection property="advertiserLabels" destination="vGg-Lp-w7e" collectionClass="NSMutableArray" id="ZzF-Go-g9r"/>
+                        <outletCollection property="advertiserLabels" destination="dsE-WY-gMM" collectionClass="NSMutableArray" id="pzf-MA-15B"/>
+                        <outletCollection property="advertiserLabels" destination="HC7-xV-uDe" collectionClass="NSMutableArray" id="0d5-EV-AZS"/>
+                        <outletCollection property="advertiserLabels" destination="Be5-IN-m1F" collectionClass="NSMutableArray" id="L7t-6Y-Off"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
