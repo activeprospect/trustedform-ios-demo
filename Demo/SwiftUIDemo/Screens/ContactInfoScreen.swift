@@ -48,7 +48,7 @@ struct ContactInfoScreen: View {
                 Text("Your info will go to an agent who can answer your questions")
                 VStack(alignment: .leading) {
                     TextField("Name", text: $firstName)
-                        .trustedFormRole(
+                        .tfElementRole(
                             .consentTrackedText(
                                 submissionId: submissionId,
                                 label: "Name"
@@ -59,7 +59,7 @@ struct ContactInfoScreen: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
 
                     TextField("Email Address", text: $email)
-                        .trustedFormRole(
+                        .tfElementRole(
                             .consentTrackedText(
                                 submissionId: submissionId,
                                 label: "Email Address"
@@ -69,7 +69,7 @@ struct ContactInfoScreen: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
 
                     TextField("Phone Number", text: $phone)
-                        .trustedFormRole(
+                        .tfElementRole(
                             .consentTrackedText(
                                 submissionId: submissionId,
                                 label: "Phone Number"
@@ -79,7 +79,7 @@ struct ContactInfoScreen: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
 
                     TextField("Message", text: $message, axis: .vertical)
-                        .trustedFormRole(
+                        .tfElementRole(
                             .consentTrackedText(
                                 submissionId: submissionId,
                                 label: "Message"
@@ -91,7 +91,7 @@ struct ContactInfoScreen: View {
 
                 Toggle(isOn: $isMilitary) {
                     Text(isMilitaryText)
-                        .trustedFormRole(
+                        .tfElementRole(
                             .consentTrackedField(
                                 submissionId: submissionId,
                                 index: 0
@@ -100,7 +100,7 @@ struct ContactInfoScreen: View {
                         .multilineTextAlignment(.leading)
                         .font(.footnote)
                 }
-                .trustedFormRole(
+                .tfElementRole(
                     .consentTrackedInput(
                         submissionId: submissionId,
                         label: "Military",
@@ -120,7 +120,7 @@ struct ContactInfoScreen: View {
                             .padding(.vertical, 8)
                     }
                 )
-                .trustedFormRole(
+                .tfElementRole(
                     .submit(
                         submissionId: submissionId,
                         label: "Submit"
@@ -132,7 +132,7 @@ struct ContactInfoScreen: View {
 
                 Text(consentText)
                     .font(.footnote)
-                    .trustedFormRole(.consentLanguage(submissionId: submissionId), text: consentText)
+                    .tfElementRole(.consentLanguage(submissionId: submissionId), text: consentText)
 
                 VStack(
                     alignment: .leading,
@@ -140,7 +140,7 @@ struct ContactInfoScreen: View {
                         Toggle(isOn: $advertiserOneConsent) {
                             Text("Advertiser 1")
                         }
-                        .trustedFormRole(
+                        .tfElementRole(
                             .consentOptedAdvertiserInput(
                                 submissionId: submissionId,
                                 label: "Advertiser 1"
@@ -152,7 +152,7 @@ struct ContactInfoScreen: View {
                         Toggle(isOn: $advertiserTwoConsent) {
                             Text("Advertiser 2")
                         }
-                        .trustedFormRole(
+                        .tfElementRole(
                             .consentOptedAdvertiserInput(
                                 submissionId: submissionId,
                                 label: "Advertiser 2"
