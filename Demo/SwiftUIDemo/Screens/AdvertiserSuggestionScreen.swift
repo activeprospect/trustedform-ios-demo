@@ -39,7 +39,7 @@ struct AdvertiserSuggestionScreen: View {
             )
 
             Text(consentText)
-                .trustedFormRole(.consentLanguage(submissionId: "advertiser-suggestion-screen"), text: consentText)
+                .tfElementRole(.consentLanguage(submissionId: "advertiser-suggestion-screen"), text: consentText)
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .padding(.vertical)
@@ -78,7 +78,7 @@ private struct AdvertiserListItem: View {
     var body: some View {
         HStack {
             Text("\(name) can help you with this decision.")
-                .trustedFormRole(.consentTrackedText(submissionId: submissionId, label: name),
+                .tfElementRole(.consentTrackedText(submissionId: submissionId, label: name),
                                  text: name)
             Spacer()
             Button(
@@ -93,7 +93,7 @@ private struct AdvertiserListItem: View {
                     }
                 }
             )
-            .trustedFormRole(
+            .tfElementRole(
                 .submit(
                     submissionId: submissionId,
                     label: "Get Info"
