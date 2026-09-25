@@ -27,8 +27,10 @@ extension NetworkingService: NetworkingProtocol {
                 result = .failure(NetworkingError.custom(message: error.localizedDescription))
             } else if let statusCode = (response as? HTTPURLResponse)?.statusCode, !(200..<300).contains(statusCode) {
                 result = .failure(NetworkingError.custom(message: HTTPURLResponse.localizedString(forStatusCode: statusCode)))
+            } else if let data = data, !data.isEmpty {
+                result = .success(try? JSONDecoder().decode(T.self, from: data))
             } else {
-                result = .success(data.flatMap { try? JSONDecoder().decode(T.self, from: $0) })
+                result = .failure(NetworkingError.unknown)
             }
             DispatchQueue.main.async { handler(result) }
         }.resume()
