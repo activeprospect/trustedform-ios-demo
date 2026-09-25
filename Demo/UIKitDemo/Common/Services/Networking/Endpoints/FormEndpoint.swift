@@ -1,12 +1,11 @@
 import Foundation
-import Alamofire
 
 enum FormEndpoint: Endpoint {
     case contact(model: ContactRequestModel)
     case tryDemo(model: DemoRequestModel)
     
-    var method: HTTPMethod {
-        return .post
+    var method: String {
+        return "POST"
     }
     
     var url: URL {
@@ -18,21 +17,14 @@ enum FormEndpoint: Endpoint {
         }
     }
     
-    var headers: HTTPHeaders {
+    var headers: [String: String] {
         switch self {
         case .tryDemo, .contact:
-            return [.contentType("application/json")]
+            return ["Content-Type": "application/json"]
         }
     }
     
-    var encoding: ParameterEncoding {
-        switch self {
-        case .tryDemo, .contact:
-            return JSONEncoding.default
-        }
-    }
-    
-    var parameters: Parameters? {
+    var parameters: [String: Any]? {
         switch self {
         case let .contact(model):
             return [
